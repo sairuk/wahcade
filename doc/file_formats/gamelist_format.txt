@@ -1,0 +1,20 @@
+mamewah game list (.lst) format
+===============================
+
+line  desc
+----  ----
+1     ROM NAME
+2     Game Name
+3     Year
+4     Manufacturer
+5     Clone Of <rom name>
+6     Rom Of <rom name>
+7     Display Type (Raster / Vector)
+8     Screen Type (Vertical / Horizontal)
+9     Controller Type
+10    Driver Status
+11    Colour Status
+12    Sound Status
+13    CatVer
+
+repeated for each game in list

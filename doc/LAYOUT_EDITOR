@@ -1,0 +1,121 @@
+Wah!Cade Layout Editor
+======================
+The layout editor supports modifying the Main, Options, Message, Screen Saver
+and the Control Panel Viewer windows.
+
+
+Running:
+========
+to run the layout editor:
+    wahcade-layout-editor
+
+
+Usage:
+======
+    wahcade-layout-editor [options] [wahcade_layout_file] [cpviewer_layout_file]
+
+    The current layout files are loaded by default.
+
+    The various settings for the currently selected item can be changed using
+    the Item Properties window (Ctrl + P).
+
+
+Keyboard:
+=========
+    Cursor Keys:         Change the position of selected items.
+    Shift + Cursor Keys: Change the size of selected items.
+
+
+Options:
+========
+  --version             show program's version number and exit
+  -h, --help            show this help message and exit
+  -u, --use-app-config  Use application config location (i.e. wahcade/config
+                        instead of the default ~/.wahcade)
+  -d, --debug           Set debug mode (disables pysco)
+
+
+Layout Notes:
+=============
+Wah!Cade will check for the following layout and image files in the order
+specified below.  If a given file does not exist, then Wah!Cade will check for
+the next one in the hierarchy.
+
+All files are searched for within the directory specified in "layout" entry of
+the wahcade.ini configuration file.  (e.g. ~/.wahcade/layouts/classic_800x600)
+
+Layouts
+-------
+    <enu_name>-?.<rotation>.lay     emulator / list specific layout file (rotated layout)
+    <emu_name>-?.lay                emulator / list specific layout file
+    <enu_name>.<rotation>.lay       emulator specific layout file (rotated layout)
+    <emu_name>.lay                  emulator specific layout file
+    layout.<rotation>.lay           general layout file (rotated layout)
+    layout.lay                      general layout file
+    ~/.wahcade/layouts/
+      classic_640x480/layout.lay    default Wah!Cade layout
+
+
+Background Images
+-----------------
+    Note:  This will only work if no image is specified in the layout file.
+
+    <emu_name>-?-main.???           emulator & custom list specific main backgound image
+    <emu_name>-main.???             emulator specific main backgound image
+    main.???                        general layout main backgound image
+
+    <emu_name>-?-options.???        emulator & custom list specific options menu backgound image
+    <emu_name>-options.???          emulator specific options menu backgound image
+    options.???                     general layout options menu backgound image
+
+    <emu_name>-?-message.???        emulator & custom list specific message box backgound image
+    <emu_name>-message.???          emulator specific message box backgound image
+    message.???                     general layout message box backgound image
+
+
+Artwork Images
+--------------
+    <game_rom_name>.???             game name
+    <game_clone_name>.???           "clone of" game name
+    <game_rom_name>/*.???           random image for game name sub-directory
+    <game_clone_name>/*.???         random image for clone name sub-directory
+    <emu_name>-art?.???             emulator & artwork specific 'no pic' image
+    <emu_name>-art.???              emulator specific 'no pic' image
+    art?.???                        artwork specific 'no pic' image
+    art.???                         general layout 'no pic' image
+    ~/.wahcade/pixmaps/empty.png    default 'no pic' image
+
+
+Main Logo Images
+----------------
+    <emu_name>-?-logo.???           emulator & custom list specific logo image
+    <emu_name>-logo.???             emulator specific logo image
+    <emu_name>logo.???              emulator specific logo image
+    logo.???                        general layout logo image
+                                    (logo images must be in same dir as layout
+                                     files)
+
+Movie Files
+-----------
+    <game_rom_name>.###             game name
+    <game_clone_name>.###           "clone of" game image
+
+where:
+    ??? may be: png, jpg, jpeg, bmp or gif
+    ? refers to the List or Artwork # number (1-10)
+    * is any file in given directory
+    ### may be: avi or mpg
+    <emu_name> is the emulator name, e.g. mame, zsnes, etc.
+    <rotation> is layouts rotation angle (0, 90, 180, 270)
+
+
+Notes:
+======
+* Any fonts that a layout requires should be installed first
+  (e.g. copy the font files into your ~/.fonts directory).
+
+=================================================
+Wah!Cade is Copyright (c) 2005-2010 Andy Balcombe
+  email: wahcade at anti-particle dot com
+=================================================
+

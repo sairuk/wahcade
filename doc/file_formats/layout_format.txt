@@ -1,0 +1,557 @@
+mamewah layout file format
+==========================
+
+line  desc
+----  ----
+1     main form background width;depth;refresh rate
+2               background height
+3               background colour (RGB) in hex, converted to dec
+4               background filename
+5     .
+6     game list highlighted-bar colour
+7     game list highlighted item colour
+8     main logo visible (True/False).
+9           transparent (0=transparent, 1=not)
+10          background colour
+11          text colour
+12          font name
+13               bold (True / False)
+14               italic (True / False)
+15               size
+16          text alignment (0=left, 1=right, 2=centre)
+17          x-pos
+18          y-pos
+19          width
+20          height
+21    game list indicator visible
+22         transparent
+23         background colour
+24         text colour
+25         font name
+26              bold
+27              italic
+28              size
+29         text alignment
+30         x-pos
+31         y-pos
+32         width
+33         height
+34    emulator name visible
+35          transparent
+36          background colour
+37          text colour
+38          font name
+39               bold
+40               italic
+41               size
+42          text alignment
+43          x-pos
+44          y-pos
+45          width
+46          height
+47    game list visible
+48          transparent
+49          background colour
+50          text colour
+51          font name
+52               bold
+53               italic
+54               size
+55          text alignment
+56          x-pos
+57          y-pos
+58          width
+59          height
+60    game selected visible
+61          transparent
+62          background colour
+63          text colour
+64          font name
+65               bold
+66               italic
+67               size
+68          text alignment
+69          x-pos
+70          y-pos
+71          width
+72          height
+73    artwork image #1 visible
+74          transparent      
+75          background colour
+76          text colour      
+77          font name        
+78               bold        
+79               italic      
+80               size        
+81          text alignment   
+82          x-pos            
+83          y-pos            
+84          width            
+85          height           
+86    artwork image #2 visible
+87          transparent      
+88          background colour
+89          text colour      
+90          font name        
+91               bold        
+92               italic      
+93               size        
+94          text alignment   
+95          x-pos            
+96          y-pos            
+97          width            
+98          height           
+99    artwork image #3 visible
+100         transparent      
+101         background colour
+102         text colour      
+103         font name        
+104              bold        
+105              italic      
+106              size        
+107         text alignment   
+108         x-pos            
+109         y-pos            
+110         width            
+111         height           
+112   artwork image #4 visible
+113         transparent      
+114         background colour
+115         text colour      
+116         font name        
+117              bold        
+118              italic      
+119              size        
+120         text alignment   
+121         x-pos            
+122         y-pos            
+123         width            
+124         height           
+125   artwork image #5 visible
+126         transparent      
+127         background colour
+128         text colour      
+129         font name        
+130              bold        
+131              italic      
+132              size        
+133         text alignment   
+134         x-pos            
+135         y-pos            
+136         width            
+137         height           
+138   artwork image #6 visible
+139         transparent      
+140         background colour
+141         text colour      
+142         font name        
+143              bold        
+144              italic      
+145              size        
+146         text alignment   
+147         x-pos            
+148         y-pos            
+149         width            
+150         height           
+151   artwork image #7 visible
+152         transparent      
+153         background colour
+154         text colour      
+155         font name        
+156              bold        
+157              italic      
+158              size        
+159         text alignment   
+160         x-pos            
+161         y-pos            
+162         width            
+163         height           
+164   artwork image #8 visible
+165         transparent      
+166         background colour
+167         text colour      
+168         font name        
+169              bold        
+170              italic      
+171              size        
+172         text alignment   
+173         x-pos            
+174         y-pos            
+175         width            
+176         height           
+177   artwork image #9 visible
+178         transparent      
+179         background colour
+180         text colour      
+181         font name        
+182              bold        
+183              italic      
+184              size        
+185         text alignment   
+186         x-pos            
+187         y-pos            
+188         width            
+189         height           
+190   artwork image #10 visible
+191         transparent      
+192         background colour
+193         text colour      
+194         font name        
+195              bold        
+196              italic      
+197              size        
+198         text alignment   
+199         x-pos            
+200         y-pos            
+201         width            
+202         height           
+203   game description visible
+204         transparent      
+205         background colour
+206         text colour      
+207         font name        
+208              bold        
+209              italic      
+210              size        
+211         text alignment   
+212         x-pos            
+213         y-pos            
+214         width            
+215         height           
+216   rom name visible
+217         transparent      
+218         background colour
+219         text colour      
+220         font name        
+221              bold        
+222              italic      
+223              size        
+224         text alignment   
+225         x-pos            
+226         y-pos            
+227         width            
+228         height           
+229   year & manufacturer visible
+230         transparent      
+231         background colour
+232         text colour      
+233         font name        
+234              bold        
+235              italic      
+236              size        
+237         text alignment   
+238         x-pos            
+239         y-pos            
+240         width            
+241         height           
+242   screen type visible
+243         transparent      
+244         background colour
+245         text colour      
+246         font name        
+247              bold        
+248              italic      
+249              size        
+250         text alignment   
+251         x-pos            
+252         y-pos            
+253         width            
+254         height           
+255   controller type visible
+256         transparent      
+257         background colour
+258         text colour      
+259         font name        
+260              bold        
+261              italic      
+262              size        
+263         text alignment   
+264         x-pos            
+265         y-pos            
+266         width            
+267         height           
+268   driver status visible
+269         transparent      
+270         background colour
+271         text colour      
+272         font name        
+273              bold        
+274              italic      
+275              size        
+276         text alignment   
+277         x-pos            
+278         y-pos            
+279         width            
+280         height           
+281   catver category visible
+282         transparent      
+283         background colour
+284         text colour      
+285         font name        
+286              bold        
+287              italic      
+288              size        
+289         text alignment   
+290         x-pos            
+291         y-pos            
+292         width            
+293         height           
+294   options form background width;depth;refresh rate
+295                background height
+296                background colour
+297                background filename
+298   .            
+299   option list highlighted-bar colour
+300   option list highlighted item colour
+301   options heading visible
+302         transparent      
+303         background colour
+304         text colour      
+305         font name        
+306              bold        
+307              italic      
+308              size        
+309         text alignment   
+310         x-pos            
+311         y-pos            
+312         width            
+313         height           
+314   options list visible
+315         transparent      
+316         background colour
+317         text colour      
+318         font name        
+319              bold        
+320              italic      
+321              size        
+322         text alignment   
+323         x-pos            
+324         y-pos            
+325         width            
+326         height           
+327   options current setting heading visible
+328         transparent      
+329         background colour
+330         text colour      
+331         font name        
+332              bold        
+333              italic      
+334              size        
+335         text alignment   
+336         x-pos            
+337         y-pos            
+338         width            
+339         height           
+340   options current setting value visible
+341         transparent      
+342         background colour
+343         text colour      
+344         font name        
+345              bold        
+346              italic      
+347              size        
+348         text alignment   
+349         x-pos            
+350         y-pos            
+351         width            
+352         height           
+353   message form background width;depth;refresh rate
+354                background height
+355                background colour
+356                background filename
+357   message heading visible
+358         transparent      
+359         background colour
+360         text colour      
+361         font name        
+362              bold        
+363              italic      
+364              size        
+365         text alignment   
+366         x-pos            
+367         y-pos            
+368         width            
+369         height           
+370   message message visible
+371         transparent      
+372         background colour
+373         text colour      
+374         font name        
+375              bold        
+376              italic      
+377              size        
+378         text alignment   
+379         x-pos            
+380         y-pos            
+381         width            
+382         height           
+383   message prompt visible
+384         transparent      
+385         background colour
+386         text colour      
+387         font name        
+388              bold        
+389              italic      
+390              size        
+391         text alignment   
+392         x-pos            
+393         y-pos            
+394         width            
+395         height           
+396   screen saver artwork image #1 visible
+397         transparent      
+398         background colour
+399         text colour      
+400         font name        
+401              bold        
+402              italic      
+403              size        
+404         text alignment   
+405         x-pos            
+406         y-pos            
+407         width            
+408         height           
+409   screen saver artwork image #2 visible
+410         transparent      
+411         background colour
+412         text colour      
+413         font name        
+414              bold        
+415              italic      
+416              size        
+417         text alignment   
+418         x-pos            
+419         y-pos            
+420         width            
+421         height           
+422   screen saver artwork image #3 visible
+423         transparent      
+424         background colour
+425         text colour      
+426         font name        
+427              bold        
+428              italic      
+429              size        
+430         text alignment   
+431         x-pos            
+432         y-pos            
+433         width            
+434         height           
+435   screen saver artwork image #4 visible
+436         transparent      
+437         background colour
+438         text colour      
+439         font name        
+440              bold        
+441              italic      
+442              size        
+443         text alignment   
+444         x-pos            
+445         y-pos            
+446         width            
+447         height           
+448   screen saver artwork image #5 visible
+449         transparent      
+450         background colour
+451         text colour      
+452         font name        
+453              bold        
+454              italic      
+455              size        
+456         text alignment   
+457         x-pos            
+458         y-pos            
+459         width            
+460         height           
+461   screen saver artwork image #6 visible
+462         transparent      
+463         background colour
+464         text colour      
+465         font name        
+466              bold        
+467              italic      
+468              size        
+469         text alignment   
+470         x-pos            
+471         y-pos            
+472         width            
+473         height           
+474   screen saver artwork image #7 visible
+475         transparent      
+476         background colour
+477         text colour      
+478         font name        
+479              bold        
+480              italic      
+481              size        
+482         text alignment   
+483         x-pos            
+484         y-pos            
+485         width            
+486         height           
+487   screen saver artwork image #8 visible
+488         transparent      
+489         background colour
+490         text colour      
+491         font name        
+492              bold        
+493              italic      
+494              size        
+495         text alignment   
+496         x-pos            
+497         y-pos            
+498         width            
+499         height           
+500   screen saver artwork image #9 visible
+501         transparent      
+502         background colour
+503         text colour      
+504         font name        
+505              bold        
+506              italic      
+507              size        
+508         text alignment   
+509         x-pos            
+510         y-pos            
+511         width            
+512         height           
+513   screen saver artwork image #10 visible
+514         transparent      
+515         background colour
+516         text colour      
+517         font name        
+518              bold        
+519              italic      
+520              size        
+521         text alignment   
+522         x-pos            
+523         y-pos            
+524         width            
+525         height           
+526   screen saver game description visible
+527         transparent      
+528         background colour
+529         text colour      
+530         font name        
+531              bold        
+532              italic      
+533              size        
+534         text alignment   
+535         x-pos            
+536         y-pos            
+537         width            
+538         height           
+539   screen saver mp3 name visible
+540         transparent      
+541         background colour
+542         text colour      
+543         font name        
+544              bold        
+545              italic      
+546              size        
+547         text alignment   
+548         x-pos            
+549         y-pos            
+550         width            
+551         height           
+      

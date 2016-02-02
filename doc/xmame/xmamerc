@@ -1,0 +1,42 @@
+### xmame running parameters ###
+#
+# Default xmame package configuration
+# Last Updated for: 0.100
+# This file is used by all xmame binaries
+
+### Data files/directories ###
+rompath                 /home/<username>/emulators/mame/roms
+samplepath              /home/<username>/emulators/mame/samples
+artwork_directory       /home/<username>/emulators/mame/artwork
+cheat_file              /home/<username>/emulators/mame/cheat.dat
+hiscore_file            /home/<username>/emulators/mame/hiscore.dat
+
+### System-wide Configuration directories ###
+inipath                 /home/<username>/emulators/mame/ini
+ctrlr_directory         /etc/xmame/ctrlr
+
+### User resources ###
+cfg_directory           /home/<username>/.xmame/cfg
+nvram_directory         /home/<username>/.xmame/nvram
+memcard_directory       /home/<username>/.xmame/mem
+input_directory         /home/<username>/.xmame/inp
+hiscore_directory       /home/<username>/.xmame/hi
+state_directory         /home/<username>/.xmame/sta
+snapshot_directory      /home/<username>/emulators/mame/snap
+diff_directory          /home/<username>/.xmame/diff
+
+### MAME Related ###
+defaultgame             pacman
+language                english
+fuzzycmp                1
+cheat                   0
+skip_disclaimer         1
+skip_gameinfo           1
+bios                    default
+
+### For target specific options
+# use the target specific file.
+#
+# X11: xmame-x11rc
+# SDL: xmame-SDLrc
+# SVGA: xmame-svgalibrc

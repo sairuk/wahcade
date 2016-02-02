@@ -1,0 +1,516 @@
+Wah!Cade CHANGELOG
+==================
+09.May.02010 - Fixed #573073: setup crashes with sdlmame 0.137u3.  Added
+               "keyboard" to list of controller types. Thanks to iamlost.
+22.Apr.02010 - Merged Wahcade Setup list changes from Enrico Magrella.
+02.Apr.02010 - Made "scroll-fix" the default.  Use "--old-key-handler" option to
+               revert to old keyboard event handling method.
+01.Apr.02010 - Added extra movie file types.  Thanks to Vítor Baptista.
+03.Feb.02010 - Added "--scroll-fix" workaround option to try and improve
+               scrolling performance on systems that seem to have broken
+               key-press / key-release events (e.g. ubuntu 9.10).
+             - Requried minimum pygtk version is now 2.12.
+             - Fixed bug in history viewer (caused by #376142).
+01.Feb.02010 - Removed unneccessary gtk.glade dependency for most files.
+             - Made config dir easier to change (now in constants.py).
+21.Jan.02010 - Removed old gtk.Toolips() call.
+             - Increased default height of wahcade-setup to 400 pixels.
+             - Fixed video playback issue reported by alain40.
+11.Jan.02010 - Changed filters.py to fix #376142. Thanks to Jason Carter for
+               supplying the fix.
+24.Dec.02009 - Adding midi files to music filespec.
+19.Jul.02009 - Released 0.99pre8 "Could it be?".
+             - Fixed empty game description which could appear in lists.
+             - Fixed #400054: Missing games in filters.  Thanks to 3vi1 for
+               reporting this.
+06.Jul.02009 - Added Italian translation.  Thanks to Diego Pierotto.
+28.Jun.02009 - Stoped music playing during intro / exit movies (reported by
+               Pinball Wizard).
+             - Added shuffle option for music playlists.
+             - Use music_movie_mix in wahcade.ini (merge / mute_movie settings).
+15.Jun.02009 - Fixed problem with cpviewler layout images. Thanks to the Pinball
+               Wizard for spotting this.
+10.Jun.02009 - Hopefully fixed bug #382247.  Thanks to hamelg.
+09.Jun.02009 - Fixed background image bug reported in the forums by dirkomatic.
+               Please see the LAYOUT_EDITOR document for more information
+               on how background images are selected.
+19.May.02009 - Fixed small bug when writing ctrlr .ini file (missing " chars).
+             - Fixed #377827: Launching emulator with alternative command-line
+               options doesn't always work.  Thanks to Jason Carter.
+17.May.02009 - Added "no-pygame" option to disable all joystick use.
+               This can be used in combination with --no-gstreamer to definitely
+               stop Wah!Cade grabbing the sound device.
+             - Added "simple" layouts from battlecat.
+             - Fixed #318606: IndexError: list index out of range.
+14.Apr.02009 - Pressing Escape key should close Property dialogs on Layout
+               Editor.
+             - Added mednafen-pce-tg16.ini template from battlecat.
+             - Renamed mednafen.ini to madnafe-lynx.ini.
+30.Mar.02009 - Released 0.99pre7 "Dizzy".
+28.Mar.02009 - Fixed #350088: UnboundLocalError.
+             - Added some debug text to get some more info on #318921.
+27.Mar.02009 - Released 0.99pre6 "Flumped".
+26.Mar.02009 - Added "no-gstreamer" option to disable all music / video.
+16.Mar.02009 - Yet another attempt at fixing #318921 (joystick looping).
+15.Mar.02009 - Another attempt at fixing #318921 (joystick looping).
+02.Mar.02009 - Fix for #318877 (launch game with invalid external app).
+             - Added mednafen (Zombie) and Vectrex (battlecat) templates.
+             - Added new wahcade.ini option ("show_list_arrows").  Set to 1 to
+               show scroll up/down arrows in Games, Options and History Lists.
+             - Set delay_before_movie_preview to 0 to disable movie playback.
+26.Feb.02009 - Formatted code according to (most) PEP8 standards.
+             - Fixed bug that stopped Mame XML / Catver info from populating in
+               Setup Editor.
+05.Feb.02009 - Another tweak to scrolled_list.py (setattr).
+04.Feb.02009 - Fixed potential bug in Setup Editor where mame settings might not
+               get saved.
+             - Partially fixed #324750 (controls.ini error).
+03.Feb.02009 - New simpler version of Scrolled list - hopefully this will be
+               faster.
+27.Jan.02009 - Added functions to set busy / normal mouse cursor.
+             - Possible fix for #318921 (joystick looping).
+25.Jan.02009 - Fixed #318606 (bug when emulator exe does not exist).
+             - Message window can now wait for a key press to continue.
+19.Jan.02009 - Joystick test label now updates properly in Setup Editor.
+16.Jan.02009 - Fixes for #317750 and #316668 (crashes on startup).
+             - Released 0.99pre5.1 "Fixed Indeed".
+11.Jan.02009 - Released 0.99pre5 "Themed Indeed".
+10.Jan.02009 - Fixed a few problems with list editor.
+             - List editor will now attempt to create a list if empty (#0 only).
+             - Added Daphne template from Gabesword.
+04.Jan.02009 - Fixed Layout Editor screen sizing.
+24.Dec.02008 - More rotation / layout rework.
+23.Dec.02008 - Reworked rotation code.
+22.Dec.02008 - Fixed default layouts in Layout Editor.
+             - Disabled Layout Drop down in Layout Editor as it keeps getting
+               the focus when it shouldn't.
+             - Created a retro 90deg rotated theme.
+21.Dec.02008 - Improved CPViewer handling in Layout Editor.
+             - Tweaked the retro layouts.
+20.Dec.02008 - Added .oga to audio and .ogg & .ogv to video extensions.
+             - Added a bunch of new templates from Zombie.
+19.Dec.02008 - Fixed #309330 error: bad character range.
+               Thanks to battlecat for reporting this one.
+18.Dec.02008 - Added battlecat's fantastic new retro themes.  Nice one Rich!
+             - Fixed #308973: History Viewer Traceback Crash.
+               Thanks to battlecat for reporting this one.
+07.Dec.02008 - Finished "one window" changes.
+05.Dec.02008 - Started change to use just "one window".  Should fix lots of the
+               focus problems.  This should also fix the message window display.
+30.Nov.02008 - Checked code into launchpad.
+             - Fixed layout directory naming bug in setup.py.
+             - Improved handling of image filenames in layouts.
+29.Nov.02008 - Fixed #303249: Ubuntu 8.10 Python errors (double-click bug).
+               Thanks to blokeinlondon for reporting this.
+26.Nov.02008 - Fixed #301492: Screensaver - changes window type.
+               Thanks to spudgunman for reporting this.
+25.Nov.02008 - Wah!Cade bugs now on launchpad.
+23.Nov.02008 - Started re-theming work.  Big thanks to everyone involved.
+             - Added wahcade to launchpad (not the code yet).
+             - Tried to fix "video / movie bug" reported by netfire.
+02.Nov.02008 - Released 0.99pre4 "Up And Under".
+31.Oct.02008 - Added text rotation to Control Panel Viewer.  Fixes bug reported
+               by spudgunman.
+             - Updated default control panel viewer layout.
+28.Oct.02008 - Added various Exit... keyboard shortcuts.
+             - Added hugo, mess (atari 800) emulator templates by Zombie.
+19.Oct.02008 - Added per list background images.  See LAYOUT_EDITOR doc for more
+               information.
+             - Fixed permssions in config.dist dir.  This is probably causing
+               the various "Permission Denied" errors in some rpm-based distros.
+               Thanks to zombie & others for reporting this one.
+             - Added extra emulator command line options ([year], [manufacturer],
+               [clone_of], [display_type], [screen_type], [category]).
+             - Better search for logo image for mame emulators.
+15.Oct.02008 - Fixed current_list bug in mame .ini template files. Spotted by
+               bagleemo, msdin2002 and spudgunman.
+             - Fixed missing PIL library warning message.  Spotted by emarcellus.
+13.Oct.02008 - Fixed "play music" error reported by Dave Baer.
+17.Sep.02008 - Stop game video from playing before playing exit movie. Reported
+               by RomKnight.
+15.Sep.02008 - Released 0.99pre3 "Down Under".
+             - Some fixes to keep the wahcade main window above desktop panels.
+             - Added nestopia template from rbrohman.
+             - Added sdlmame template.
+12.Sep.02008 - Added [autorotate] patches from Martin Kalitis.
+             - Command line options for external apps are now parsed properly.
+               Thanks to zerojay for reporting this one.
+27.Aug.02008 - Sort key list in Setup Editor.
+26.Aug.02008 - More work on the rotation patch.
+24.Aug.02008 - Merged Martin Kalitis' excellent layout rotation patches.
+             - Try and handle errors from gstreamer video object creation.
+17.Aug.02008 - Released 0.99pre2 "Blimp".
+16.Aug.02008 - Added mupen64plus and pcsx emulator templates from KillsTheWeak.
+15.Aug.02008 - Fixed filter clones bug.  Thanks to mewyn for spotting this one.
+07.Aug.02008 - Handle gtk version checks around set_do_overwrite_confirmation
+               calls better (thanks to krisbee for reporting the bug).
+             - Added new default theme (Mr Salty Classic).  Thanks to the author
+               and http://localarcade.com/screenshotarchive for letting us
+               include these.
+             - Background should now display on layout load in Layout Editor.
+27.Jun.02008 - Any new .ini config options should now be added to file
+               automatically.
+24.Jun.02008 - Remember window size in Setup Editor.
+22.Jun.02008 - Fixed typo in gstreamer version check. Should play stuff again.
+14.Jun.02008 - Setup Editor now handles removing emulator lists properly.
+04.Jun.02008 - Added updated Spanish (es) translation from Nicolás Álvarez.
+26.May.02008 - Added Full Screen option for Layout Editor (battlecat).
+             - Fixed volume sliders in Setup Editor (battlecat).
+25.May.02008 - "Add emulator" list (Setup Editor) now sorted in alphabetical
+               order.  No longer prompted for a save filename unless one already
+               exists (battlecat).
+             - Fixed problem where wahcade woulnd't always pick a layout file
+               to use.
+24.May.02008 - Added dependency for python-glade2 to debian package.
+04.May.02008 - Released 0.27 "Fixed?".
+             - Fixed deb build script.  Problem was caused by using "ar" to
+               build deb files.
+08.Apr.02008 - Added histview files to setup.py.   Well spotted by battlecat.
+03.Apr.02008 - Added md5sum file to bdist_debian.py.
+31.Mar.02008 - Released 0.26 "Splat!".
+30.Mar.02008 - Added "save as" dialog to Add Emulator option in Setup Editor.
+             - Check that current emulator exists when starting up.
+             - Added list of possible mame ini filenames to constants.py.
+               Required because we treat the mame emulator differently to others.
+             - Enable / disable mame only stuff as required in Setup Editor.
+29.Mar.02008 - Create an empty list file when it doesn't already exist.
+             - Fixed empty options list bug.
+28.Mar.02008 - Added some more template ini files.  Thanks to battlecat,
+               KillsTheWeak and robbforce.
+             - Now picks random artwork from dir matching rom names. Thanks to
+               Hioushi (http://www.anti-particle.com/forum/viewtopic.php?t=169).
+24.Mar.02008 - Rewrote deb package builder to use setup.py and deb script from
+               http://home.cfl.rr.com/genecash/nokia/making_packages.html
+22.Mar.02008 - Fixed About dialog bug in deb package.  Thanks to battlecat.
+10.Mar.02008 - Fixed drwVideo bug where gstreamer import fails.  Thanks to
+               stealth for reporting this.
+             - Removed win32 checks for gstreamer.
+17.Feb.02008 - Released 0.25 "Yikes!".
+13.Feb.02008 - Added better error handling for gstreamer music object creation.
+               Thanks to bonzo for help with this one.
+03.Feb.02008 - Stopped game movies playing during intro / exit movies playback.
+               Thanks to RomKnight for spotting this one.
+30.Jan.02008 - Fixed a wrap-round scrolling bug.  Cheers to natrix for spotting
+               this one & helping to test the fix.
+18.Jan.02008 - Released 0.24 "Divide By Zero".
+             - Fixed "list index out of range" bug when using "Most Played" or
+               "Longest Played" type lists.
+14.Jan.02008 - Added exit movie playback.
+             - Added External Screen Saver option to Setup Editor.
+13.Jan.02008 - Added a couple of bug fixes from nellistc (scroll and cpviewer).
+             - Fixed movie player screen saver.
+             - Added intro movie playback.
+27.Dec.02007 - Re-worked joystick support in the Setup Editor.
+21.Dec.02007 - Added zerodiv's excellent joystick patch.  This requires pygame.
+16.Dec.02007 - Added better mouse support to Setup Editor keys dialog.
+10.Dec.02007 - Added Game List Editor.
+08.Dec.02007 - Improved mouse support.
+             - Tweaked shutdown stuff to be more like MameWAH.  Added reboot
+               option too.
+05.Dec.02007 - Added nellistc's shutdown patch.
+03.Dec.02007 - Got trackball / spinner scrolling roughly implemented.
+21.Oct.02007 - Added check for music path.
+             - Stopped Setup Editor letting users generate lists that are set
+               to "Most Played" or "Longest Played" types.
+19.Oct.02007 - Released 0.23 "Wet Your Whistle".
+14.Oct.02007 - Added some template .ini files for the MESS emulator - cheers to
+               SeTTleR.  The run_mess.sh script should be in the wahcade's
+               doc/samples directory.
+13.Oct.02007 - Finished off music stuff.
+             - Added rotation for History Viewer.
+10.Oct.02007 - Finished up the new template system in the Setup Editor.
+             - Added next / previous music track keys.  More music tidy-up.
+             - Added support for vertical layouts. (Text & Lists can be rotated).
+01.Oct.02007 - Fixed screenshot not changing when new list is loaded.
+             - Added keypad up, down, left & right keys. Thanks to delphipool.
+             - Added splash screen.
+26.Sep.02007 - Tidied up lots of music playback bits.
+             - Added drop-down list of layouts in the Layout Editor.
+18.Sep.02007 - Implemented Logo images in layouts.  And check for list specific
+               background images too.  Thanks to captbaritone for spotting this.
+06.Sep.02007 - Added music config to Setup Editor.
+             - Added another patch (change to emulator dir) from Sylvain Faveau.
+04.Sep.02007 - Fixed bug in layout editor height props.  Cheers to 3NF for
+               spotting this one.
+22.Aug.02007 - Started to add music browsing / playback.
+21.Aug.02007 - Lots of messing around with file encoding stuff in filters.py.
+             - Fixed mameinfo.xml generation in Setup Editor.
+15.Aug.02007 - Impmenting new emulator tempate system in Setup Editor.
+12.Aug.02007 - Implementing Sylvain Faveau's filter patches.
+             - Hide image widget when movie playing.
+08.Aug.02007 - Released 0.22 "Viva Viet Vegas".
+             - Tidied up gst video initialisation.
+07.Aug.02007 - Updated a few of the docs / quick start guide.
+01.Aug.02007 - Added generate XML file button for mame in Setup Editor.
+30.Jul.02007 - Fixed start up bug (image not displayed) in Layout Editor.
+             - Fixed missing image bug when emulators are switched. Cheers to
+               SeTTleR and ztomiccomputers for spotting this one.
+             - Added German (de) translation - huge thanks to SeTTleR.
+29.Jul.02007 - Finished off CPViewer bindings stuff.
+27.Jul.02007 - Store fullscreen setting in wahcade.ini file. Added fullscreen
+               option to Setup Editor.
+             - Cleaned up debian packing script.
+25.Jul.02007 - Build proper debian / ubuntu package with dependencies.  RPM too.
+23.Jul.02007 - Expanded CPViewer bindings.
+15.Jul.02007 - Display correct menu headings in options dialog.
+08.Jun.02007 - Optimized gstreamer video widget a bit.
+06.Jun.02007 - Replaced mplayer video widget with gstreamer one.
+             - Changed Movie Volume checkbox in Setup Editor to a sliding scale.
+02.Jun.02007 - Released 0.21 "Ten Toes Hanging".
+01.Jun.02007 - Added progress bar to "please wait..." dialog on Setup Filters.
+30.May.02007 - Added NMS file support (Thanks to lowlight for suggesting this).
+28.May.02007 - Added Delete Emulator & Delete Emu List options to Setup Editor.
+26.May.02007 - Fixed config file copying bug.  Should be able to delete files
+               in ~/.wahcade/ini now without them magically re-appearing.
+               Thanks to ztomiccomputers for spotting this one.
+13.May.02007 - Reworked Setup Editor layout a bit.
+12.May.02007 - Optimised scrolled list performance more - much, much better now.
+             - Display total matched games in Filters window of Setup Editor.
+08.May.02007 - Added default value parameter to mamewah_ini module.
+             - Added per list emulator command lines (inc. alt. format 1 & 2)
+             - Optimised scrolled list performance slightly - more to do.
+07.May.02007 - Released 0.20 "Nectargirl Climbs On".
+05.May.02007 - Did some win32 testing using VirtualBox, Windows XP and the
+               mame32 emulator. Seems to work OK.
+04.May.02007 - Applied nellistic's scrolling patch to the History window too.
+             - Added command line info to ~/.wahcade/emulator.log output and
+               stopped emulator.log file from being written in Windows.
+             - Fixed missing icon from Layout Editor.
+             - Fixed error when clicking Filters button in Setup Editor.
+27.Apr.02007 - Thanks to an excellent patch from nellistc, the longer a scroll
+               key is held down the faster the games list scrolls.  Fantastic!
+19.Apr.02007 - Stopped History Window list scrolling 2 lines at a time.
+             - Fixed History Window header not displaying.
+17.Apr.02007 - Big thanks for Sylvain Faveau for the French translation.
+08.Apr.02007 - Fixed screen saver bug in Setup Editor - it should now recognize
+               the launch_scr option.
+29.Mar.02007 - Spanish translation - Huge thanks to Nicolás Álvarez.
+17.Mar.02007 - Released 0.19 "Nose Furnace".
+16.Mar.02007 - Fixed layout bug that left dots on the screen.
+13.Mar.02007 - Added external screen saver function (set "saver_type" in
+               <emu-name>.ini file to "launch_scr" and then set "scr_file" to
+               your screen saver command, eg. "gnome-screensaver-command -a").
+21.Feb.02007 - Fixed "unable to close screen saver" bug.
+             - Hopefully improved memory usage (esp. when in slide-show).
+20.Feb.02007 - Screensaver is now disabled when delay = 0 (wahcade.ini).
+18.Feb.02007 - Released 0.18 "Catty And The Major".
+16.Feb.02007 - Fixed another filename matching bug.
+15.Feb.02007 - Changing Emulator List name in Setup Editor now updates the drop
+               down list selection.
+24.Jan.02007 - Fixed bug which let a game be added to a list multiple times.
+             - Cleaned up rom filename detection code (Thanks to Relayer for
+               reporting this bug).
+24.Jan.02007 - Added setup filters to Setup Editor (mame only).
+20.Jan.02007 - Huge thanks to Daniel Nylander for providing the Swedish (sv)
+               translation.
+18.Jan.02007 - Hopefully fixed multiple screensaver timer bug.
+15.Jan.02007 - Added support for per-list layouts (<emu-name>-?.lay).
+             - Seemed to actually have fixed the "black video window" bug.
+12.Jan.02007 - Released 0.17 "Jelly Result".
+09.Jan.02007 - Added a couple of reset options to the Setup Editor.
+             - Made filters work with Mame versions > 0.106.
+08.Jan.02007 - Fixed "missing image" lookups - they should now work as advertised.
+             - Made sure Game List is "on top" of other widgets.
+               Cheers again to robbforce for reporting these out.
+21.Dec.02006 - Released 0.16 "Avalon".
+16.Dec.02006 - Added Auto Launch Apps option to Setup Editor (Emulator tab).
+             - Added Wrap List option to Setup Editor (Wah!Cade tab).
+             - History Viewer heading now shows Game Title instead of Rom Name.
+14.Dec.02006 - Implemented background colours on Main & History Viewer layouts.
+               You might need to tidy up your layouts in the editor!
+13.Dec.02006 - Fixed setting window width & height in the Setup Editor.
+11.Dec.02006 - Added scrolled window to Setup Editor (Emulator tab).
+             - Lists now follow alignment set in Layout Editor.
+             - Users's config dir (~/.wahcade) should now be automatically
+               updated with any missing files.
+10.Dec.02006 - Added label alignment to layouts.
+             - History Viewer now has it's own layout file.
+06.Dec.02006 - Don't expand paths that start with "~/" when saving .ini files.
+04.Dec.02006 - Default startup to fullscreen mode (this matches MameWAH). To
+               start in windowed mode use the "-w" commandline option.
+30.Nov.02006 - The wahcade.ini "wrap_list" setting now works.
+             - Rewrote scolled list row font size calcs.
+             - Fixed existing key / action display in Setup Editor.
+             - Keyboard shortcuts for "hide menu" and "launch game with
+               options" 1 & 2 now work.
+29.Nov.02006 - Better checks for artwork & movie filenames.
+             - Improved the LAYOUT_EDITOR document.
+             - Better scrolled list row layout calcs.
+             - Keyboard shortcut for "screen saver find & select game"  now
+               works.
+28.Nov.02006 - Options menu now displays proper heading.
+             - Fixed up Game List Options menu.
+             - Display filename in Layout Editor window title.
+27.Nov.02006 - Values of spinner widgets should now save properly in the Setup
+               Editor (Cheers to Buks again).
+26.Nov.02006 - File -> Quit show now work in Layout Editor (Cheers Buks).
+25.Nov.02006 - Updated setup.py (for building a windows version with py2exe).
+             - Fixed bug where the current game was not saved to ini file when
+               using mouse.
+23.Nov.02006 - Fixed some bugs (some browse buttons not working) in the Setup
+               Editor (cheers to Buks for spotting them). The "Keys" tab now
+               saves any changes made too!
+22.Nov.02006 - Improved locale settings a bit (improving non-ascii unicode text).
+             - Fixed "IndexError: list index out of range bug" in scrolled_list.py.
+             - Updated example xmamerc and xmame-x11rc files.
+20.Nov.02006 - Released 0.15 "Night Of The Hunter".
+             - Keyboard shortcuts for "find game", "add game to list",
+               "remove game from list", "select emulator" and "select game list"
+               now work.
+19.Nov.02006 - Currently selected game now saved again.
+             - When jumping to next / previous game list, check for "cycle_list"
+               setting in relevant .ini files.  Also added this feature to
+               Wahcade Setup.
+             - Updated keyboard & mouse handling.
+18.Nov.02006 - Fixed warning error when elementtree package is missing.
+17.Nov.02006 - (Hopefully) modified Wah!Cade so it can be internationalized.
+15.Nov.02006 - Added Wah!Cade icon to windows.
+             - Closing About... Dialog now uses the Launch_Game & Exit keys as
+               they are defined in the ~/.wahcade/ctrl/default.ini file.
+14.Nov.02006 - Added multiple selection feature to Layout Editor.
+             - Added option to Layout Editor view menu to keep property dialogs
+               "on top".
+             - Fixed setup.py so it should now be possible to build a windows .exe
+               using py2exe.
+13.Nov.02006 - Emulator output is now sent to ~/.wahcade/emulator.log unless
+               debug mode is on.
+09.Nov.02006 - Added check for python version on startup (must be at least 2.4.0).
+08.Nov.02006 - Reworked scrolling lists, so the mouse can now be used if "mouse = 1"
+               in ~/.wahcade/ctrlr/default.ini file.
+             - Mouse scroll wheel (up / down) is now detected - use MOUSE_SCROLLUP
+               and MOUSE_SCROLLDOWN in the ~/.wahcade/ctrlr/default.ini file.
+30.Oct.02006 - Released 0.14 "Dead Man".
+             - Fixed Key Press Dialog display bug.
+             - Fixed .deb package bug which stopped default layouts being included.
+25.Oct.02006 - Layout Editor now quits with a useful error message when no config
+               files are found.
+             - Better defaults for the CPViewer config.
+24.Oct.02006 - Fixed save on exit bug in Setup & Layout Editors.
+             - Fixed *huge* bug in mamewah_ini.py that meant no previously empty
+               options could be updated.
+             - Now makes seconds attempt to populate list with games if none
+               initially found.
+23.Oct.02006 - Fixed a couple of missing "button clicked" events on wahcade-setup.
+             - Pressing keys 1, 2 or escape on the Help->About... dialog will close it.
+19.Oct.02006 - Fixed auto launch error.  Cheers (again) to Mike for spotting this one.
+             - Released 0.13.2 "Oh Dear".
+17.Oct.02006 - Quit menu in wahcade-setup & save while quitting now work properly.
+               Thanks to Aaron Greenspan for these.
+13.Oct.02006 - Ooops.  Added a doc file for wahcade-setup.
+             - Included the templates directory in the tarball.
+             - Hopefully fixed the dreaded sys.path[0] error.
+             - Released 0.13.1 "Errr".
+11.Oct.02006 - Released 0.13 "Gimme Danger".
+09.Oct.02006 - Movies in Screen Saver now works, although it's not quite the same
+               behaviour as mamewah - to be sorted in 0.14.
+08.Oct.02006 - Dan Roscigno reported a problem with emulators not getting the focus
+               after launching, so I've added a {minimize} flag to the emulators
+               commandline_format options.
+04.Oct.02006 - Finished drag & drop in the Layout Editor.
+             - Can now move (& resize) items in the layout editor with the
+               (shift +) cursor keys.
+             - Fixed alignment bug in CP Viewer.
+03.Oct.02006 - Redone drag & drop on layout editor (should stop things "jumping" around).
+02.Oct.02006 - Trying to fix the drag & drop "jumping" bug in the layout editor.
+28.Sep.02006 - Wahcade-setup is basically done.
+             - Started work on movie playback in the screen saver.
+             - Redone wah!cade desktop icon.
+25.Sep.02006 - A very early alpha of wahcade-setup is working.
+             - Auto launch applications now seems to work.
+19.Sep.02006 - Added Control Panel Viewer pane to layout editor.
+             - Removed glade based cpviewer options (one way to do it is enough).
+26.Aug.02006 - Stopped video playing when switching emulators.
+             - Released 0.12 "Search And Destroy".
+20.Aug.02006 - Sylvain Fauveau fixed: 1) an "invisible background image" bug,
+               and 2) A problem with the "rom_folder" setting in filters.py
+08.Aug.02006 - Fixed AttributeError bug in video init code (win32).
+             - Modified launch_game() to use subprocess modules wait function.
+               Big thanks to Sylvain Fauveau for these bug reports & fixes.
+06.Jul.02006 - Lots more work on the layout editor.
+04.Jul.02006 - Save layout added to editor.
+03.Jul.02006 - More stuff added to wahcade-layout-editor. Still needs to save layouts though.
+29.Jun.02006 - Added about dialog.  With logo - Cheers Buks.
+28.Jun.02006 - Cool new layout editor started (wahcade-layout-editor).
+02.Jun.02006 - Released 0.11 "Satan's Chainsaw".
+01.Jun.02006 - Tidied up timer functions.
+31.May.02006 - Rewritten mamewah_ini.py to be faster.
+30.May.02006 - Can now mute movies.  Fixed aspect bug in screensaver.
+29.May.02006 - Scaled video wiget correctly.
+             - Use the wahcade.ini "keep_image_aspect" option when scaling images.
+             - Use the wahcade.ini "show_cursor" option to show / hide mouse cursor.
+26.May.02006 - Tidied up movie previews a bit.
+24.May.02006 - Added movie previews. Requires mplayer to be installed. Linux only.
+               I've used a (modified) mplayer control class from Jay Dolan
+               (http://jdolan.dyndns.org/jaydolan/pymp.html). Cheers Jay!
+22.May.02006 - Wah!Cade now quits after copying config files to ~/.wahcade in
+               order to let user do initial configuration.
+20.May.02006 - Released 0.10 "Boiler Room".
+19.May.02006 - Added checking for minimum version of .ini files (only used for cpviewer).
+16.May.02006 - Added Glade based CPViewer option.
+07.May.02006 - More informative error handling for non-existant files and paths.
+               Added (untested) support for python 2.5 (particularly elementtree stuff).
+16.Apr.02006 - .ini file and layout entries with "~/some/path" now expand to
+               /home/<user>/some/path. Thanks to Jim Merullo for spotting this one.
+19.Mar.02006 - Released 0.9 "Cyanide Bath".
+12.Mar.02006 - Fixed up launching history & control panel viewers.
+08.Mar.02006 - Added control panel viewer.  Uses layouts from windows CPViewer
+               application.   Launch by setting "wahcade-cp-viewer"
+               (app_1_executable option) in mame.ini file.
+             - Changed to a user based config system (~/.wahcade).
+               If necessary config files are copied from wahcade/config on startup.
+             - Support blank_screen type of screen saver.
+             - Support show_cursor option (wahcade.ini).
+13.Feb.02006 - Patched filters.py to fix list of controllers.
+             - Big thanks to both Mike Crawford and Mike Schwartz for this.
+04.Feb.02006 - Fixed a couple of list scrolling bugs.  Current emulator list is
+               now stored before switching emulators.
+26.Jan.02006 - Time game played should be measured properly now.
+20.Jan.02006 - Message window should now display properly when a game is launched.
+10.Jan.02006 - Released 0.8 "Sex God Missy".
+09.Jan.02006 - Fixed bug in scrolled list.
+08.Jan.02006 - Bug fixes for initial list generation.
+             - Now loads .jpg or .png images.
+07.Jan.02006 - Added basic support for the other emulators (tested with zsnes).
+               Added support for multiple themes (one per emulator).
+30.Dec.02006 - Initial filter list generation now checks to see if roms actually exist.
+15.Dec.02006 - Fixed bug when filtering with "clones better than parent" option set.
+             - "All games" list now displays full game description.
+11.Dec.02006 - Added message window.
+             - Use the mame.ini file to get commandline_format (for launching games).
+08.Dec.02006 - Fixed bug in "add game to list" menu.
+             - Released 0.7 "Helot".
+07.Dec.02006 - Most Played / Longest Played lists now work correctly.
+06.Dec.02006 - Fixed up the History Viewer a bit.  Its now got its own ini file.
+             - Fixed parsing of keys.
+05.Dec.02005 - Added History Viewer for mame.
+04.Dec.02005 - Fixed scaling of images on main screen & screen saver.
+01.Dec.02005 - Thanks to Buks for spotting this one - fixed checking for images
+               with either upper & lower case names.
+27.Nov.02005 - The config dir now gets installed as config.dist to stop people's
+               existing configs from being overwritten.
+             - Released 0.6 "Pork Chop".
+24.Nov.02005 - Added screen saver.
+23.Nov.02005 - Added keyboard documentation.
+             - Find game menu now works.
+22.Nov.02005 - Fixed resize bug in transparent list.  This means that wahcade should
+               now run on pygtk 2.6 systems.
+18.Nov.02005 - Released 0.5 "Behemoth".
+17.Nov.02005 - Fixed filters (again) & hopefully sorted out the unicode mess.
+15.Nov.02005 - Now builds windows from scratch instead of requiring a glade file.
+14.Nov.02005 - Realised the the transparent list widget needs gtk/pygtk 2.8.
+             - Fixed a couple'o'bugs in window sizing.
+13.Nov.02005 - Generating filtered lists implemented.
+             - Added some better docs.
+10.Nov.02005 - Correct colours now shown for highlighted entry in lists.
+             - Lots of work on the options menus.
+08.Nov.02005 - Made list display more efficient - It only updates rest of layout when user
+               finishes pressing keys.
+06.Nov.02005 - Replaced the old treeview widgets with the new transparent scrolled list.
+03.Nov.02005 - Developed a transparent scrolled list widget (basically a set of gtk labels).
+02.Nov.02005 - Started work on favourites / most played lists
+             - Fixed colours, selecting game lists from option menu & lots more.
+01.Nov.02005 - Added some more Option menu features, etc.
+30.Oct.02005 - Added basic Option menu support.
+             - Fixed launching of MAME games.
+29.Oct.02005 - Very early alpha 0.1 kind of works.
+

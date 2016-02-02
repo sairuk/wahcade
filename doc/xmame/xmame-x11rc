@@ -1,0 +1,74 @@
+### Digital sound related ###
+dsp-plugin              alsa
+timer                   0
+
+### Sound mixer related ###
+sound-mixer-plugin      alsa
+
+#x11
+fullscreen              1
+video-mode              1
+cursor                  0
+grabmouse               1
+grabkeyboard            1
+
+### Video Related ###
+arbheight               0
+heightscale             1
+widthscale              1
+effect                  5
+autodouble              1
+artwork                 0
+use_backdrops           1
+use_overlays            1
+use_bezels              0
+artwork_crop            0
+frameskipper            1
+throttle                1
+frames_to_run           0
+sleepidle               0
+autoframeskip           1
+maxautoframeskip        8
+frameskip               1
+brightness              1.000000
+pause_brightness        0.650000
+gamma                   1.000000
+norotate                0
+ror                     0
+rol                     0
+autoror                 0
+autorol                 0
+flipx                   0
+flipy                   0
+
+### Vector Games Related ###
+# vectorres             <NULL> (not set)
+beam                    1.000000
+flicker                 0.000000
+intensity               1.500000
+antialias               1
+translucency            1
+hardware-vectors        1
+
+### Video Mode Selection Related ###
+keepaspect              1
+displayaspectratio      1.330000
+
+### Sound Related ###
+samples                 1
+samplefreq              22050
+bufsize                 3.000000
+volume                  0
+# audiodevice           <NULL> (not set)
+# mixerdevice           <NULL> (not set)
+
+### Input device options ###
+joytype                 0
+analogstick             0
+joydevname              /dev/input/js
+ugcicoin                0
+steadykey               0
+a2d_deadzone            0.300000
+digital                 none
+usbpspad                0
+rapidfire               0

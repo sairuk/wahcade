@@ -1,0 +1,39 @@
+Wah!Cade Setup Editor
+=====================
+The setup editor help manage the bewildering array of .ini files (in ~/.wahcade).
+
+
+Running:
+========
+to run the setup editor:
+    wahcade-setup
+
+
+
+Usage:
+======
+    wahcade-setup [options]
+
+    If no setup files exist in ~/.wahcade then they will be created from default
+    settings.
+
+    See the INI_FILES and README documents for more info.
+
+
+Options:
+========
+  --version             show program's version number and exit
+  -h, --help            show this help message and exit
+  -u, --use-app-config  Use application config location (i.e. wahcade/config
+                        instead of the default ~/.wahcade)
+  -d, --debug           Set debug mode (disables pysco)
+
+
+Notes:
+======
+
+=================================================
+Wah!Cade is Copyright (c) 2005-2009 Andy Balcombe
+  email: wahcade at anti-particle dot com
+=================================================
+

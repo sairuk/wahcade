@@ -1,0 +1,5 @@
+set scanline 0
+set blur 0
+set fullscreen true
+plug joyporta joystick1
+plug joyportb joystick2

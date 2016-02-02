@@ -1,0 +1,37 @@
+#!/bin/sh
+#make a tarball for the project
+
+PROJECTS=~/projects
+COMMON=$PROJECTS/common
+NAME=wahcade
+LNSOURCE=$PWD
+SOURCE=$PROJECTS/$NAME
+WWW=$PROJECTS/anti-particle.com
+
+#make directories
+mkdir -p $PROJECTS
+mkdir -p $COMMON
+#mkdir -p $SOURCE
+ln -s $LNSOURCE $SOURCE
+mkdir -p $WWW
+mkdir -p $SOURCE/dist/tarballs/
+mkdir -p $SOURCE/dist/rpms/
+mkdir -p $SOURCE/dist/debs/
+mkdir -p $PROJECTS/windows_data/downloads/temp
+mkdir -p $WWW/projects/$NAME/
+
+#set vars requiring directories
+VERSION=$(cat $PROJECTS/$NAME/VERSION)
+PYVER=$NAME-$VERSION
+TARBALL=$SOURCE/dist/tarballs/$PYVER.tar.gz
+
+#make the tarball
+cd $PROJECTS
+tar -zhcf $TARBALL -T $NAME/wahcade_files
+
+#copy stuff to antiparticle dir
+cp -f $TARBALL $PROJECTS/windows_data/downloads/temp
+cp -f $TARBALL $WWW/projects/$NAME
+cp -f $SOURCE/doc/[A-Z]* $WWW/projects/$NAME/
+cp -f $SOURCE/doc/xmame/xmamerc $WWW/projects/$NAME/
+cp -f $SOURCE/doc/xmame/xmame-x11rc $WWW/projects/$NAME/

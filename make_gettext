@@ -1,0 +1,37 @@
+#!/bin/sh
+#run scripts to internationalize wahcade
+PROJECTS=~/projects
+NAME=wahcade
+SOURCE=$PROJECTS/$NAME
+
+
+#
+cd $SOURCE/po
+
+#extract messages from glade files
+intltool-extract --type=gettext/glade ../glade/wahcade_setup.glade
+intltool-extract --type=gettext/glade ../glade/layout_editor.glade 
+
+#create messages.pot file
+xgettext -k_ -kN_ -LPython -o messages.pot $SOURCE/*.py $SOURCE/glade/wahcade_setup.glade.h $SOURCE/glade/layout_editor.glade.h
+
+#insert any new messages into translation files
+#msgmerge -U en.po messages.pot
+msgmerge -U de.po messages.pot
+msgmerge -U en_GB.po messages.pot
+msgmerge -U es.po messages.pot
+msgmerge -U fr.po messages.pot
+msgmerge -U it.po messages.pot
+msgmerge -U sv.po messages.pot
+
+#compile into application format
+msgfmt de.po -o $SOURCE/locale/de/LC_MESSAGES/wahcade.mo
+msgfmt en_GB.po -o $SOURCE/locale/en_GB/LC_MESSAGES/wahcade.mo
+msgfmt en.po -o $SOURCE/locale/en/LC_MESSAGES/wahcade.mo
+msgfmt es.po -o $SOURCE/locale/es/LC_MESSAGES/wahcade.mo
+msgfmt fr.po -o $SOURCE/locale/fr/LC_MESSAGES/wahcade.mo
+msgfmt it.po -o $SOURCE/locale/it/LC_MESSAGES/wahcade.mo
+msgfmt sv.po -o $SOURCE/locale/sv/LC_MESSAGES/wahcade.mo
+
+#
+cd $SOURCE

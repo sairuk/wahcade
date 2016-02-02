@@ -1,0 +1,64 @@
+#!/bin/bash
+#
+# Quick proof of concept bzr updater scrip
+# incorporate into interface/write in python later
+#
+# will update an install in the users home directory.
+# edit WP var to change the location.
+#
+# 20101218 - first release of basic script
+
+WP="$PWD"
+WGET=`which wget`
+BZR=`which bzr`
+
+if [ -d ${WP}/.bzr ]; then
+	if [ -f ${WP}/.bzr/branch/branch-revision ]; then
+		echo "Removing old branch-revision file"
+		rm ${WP}/.bzr/branch/branch-revision
+	fi
+echo "Checking for update ... Please Wait"
+BRANCH_URL=`grep -m1 "parent_location" ${WP}/.bzr/branch/branch.conf | awk '{ print $3 }' `
+
+if [ `echo ${BRANCH_URL} | grep -o "bzr+ssh"` ]; then
+	echo "Branch is using bzr+ssh method, fixing url for use with updater."
+	BRANCH_RSS=`echo ${BRANCH_URL} | sed -e s#bzr\+ssh#http#`
+else
+	BRANCH_RSS=${BRANCH_URL}
+fi
+wget -q ${BRANCH_RSS}/changes/ -O ${WP}/.bzr/branch/branch-revision
+LAST_REV=`cat ${WP}/.bzr/branch/last-revision | awk '{ print $1 }'`
+BRANCH_REV=`grep -m1 "<span>" ${WP}/.bzr/branch/branch-revision | sed -e s#\<[^\>]*\>##g`
+
+	if [ ! $LAST_REV ]; then
+		echo "Could not obtain current branch revision number, exiting"
+		exit 0
+	fi
+
+        if [ ! $BRANCH_REV ]; then
+                echo "Could not obtain remote branch revision number, exiting"
+                exit 0
+        fi
+
+        if [ $BRANCH_REV -gt $LAST_REV ]; then
+                BEHIND=$(($BRANCH_REV-$LAST_REV))
+                echo -n "Update available, you are ${BEHIND} commits behind, update? (y/N): "
+                read a
+                if  [[ $a == "Y" || $a == "y" ]]; then
+                        cd ${WP}
+                        echo "Updating branch to revision: ${BRANCH_REV} in ${WP} using ${BZR} from ${BRANCH_URL}"
+                        ${BZR} pull ${BRANCH_URL}
+                        exit 1
+                else
+                        echo "Not updating, local version remains at revision: ${LAST_REV}"
+                        exit 0
+                fi
+        else
+                echo "Revision: ${LAST_REV} is current"
+                exit 0
+        fi
+else
+        echo "This is not a branched version of wahcade, script cannot be used"
+        exit 2
+fi
+

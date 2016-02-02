@@ -1,0 +1,115 @@
+Wah!Cade README
+===============
+
+Wah!Cade is a clone of the excellent MameWAH (http://mamewah.mameworld.net/)
+front-end for the M.A.M.E. emulator (and others too).
+
+Why clone MameWAH?  Because Wah!Cade works on GNU/Linux :o)
+
+Configuring
+===========
+Please read the quick setup guide on the wahcade website:
+    http://www.anti-particle.com/wahcade_quick.shtml
+
+
+Notes:
+------
+* See the KEYS file for info on keyboard commands
+
+* Wah!Cade uses MameWAH's config system, so if you have an existing MameWAH setup you can use
+  a copy of it's various config files.  If so, you'll need to copy the following directories
+  from an existing MameWAH installation into the ~/.wahcade directory:
+       * ctrlr
+       * files (optional)
+       * ini
+       * layouts
+  See the INI_FILES file for more information.  Reading up on current MameWAH
+  documention might help too.
+
+* When running wahcade for the first time, it can be a little slow as
+  it needs to peruse the huge mameinfo.xml file and create its initial
+  game lists & filters.
+
+* You can use a mameinfo.dat file instead of the preferred xml format, but be
+  warned - it's much, much, *much* slower
+
+* Some nice skins for MameWAH / Wah!Cade can be found at:
+  http://localarcade.com/screenshotarchive/skins.htm
+
+* to get movies to work, set the movie_preview_path and movie_artwork_no
+  entries in ~/.wahcade/ini/<emu_name>.ini
+
+* to mute movies, set the movie_volume entry to 0 in ~/.wahcade/wahcade.ini
+
+* Any fonts that a layout requires should be installed first (e.g. for Gnome users,
+  copy the font files into your ~/.fonts directory).
+
+* Check the forums too: http://www.anti-particle.com/forum
+
+
+Running Wah!Cade
+================
+to run Wah!Cade:
+    wahcade
+
+to run the Layout Editor:
+    wahcade-layout-editor
+
+to run the Setup Editor:
+    wahcade-setup
+
+or, if you're running from the source directory:
+    cd /path/to/wahcade
+    ./wahcade.py
+    ./wahcade-layout-editor.py
+    ./wahcade-setup.py
+
+wahcade options:
+  --version          show program's version number and exit
+  -h, --help         show this help message and exit
+  -w, --window       Set windowed mode
+  -f, --full-screen  Set fullscreen mode
+  -d, --debug        Set debug mode (disables pysco)
+  --no-gstreamer     Set to disable all gstreamer use (music / video playback)
+  --no-pygame        Set to disable all pygame use (joysticks)
+  --old-key-handler  Set to revert to old keyboard event handling
+* you need to change your desktop resolution to match your chosen layout if you
+  want full-screen wah!cade to look right.
+
+
+Credits
+=======
+Thanks to:
+    * Obviously, a huge thanks to Minwah for MameWAH (http://mamewah.mameworld.net/)
+      and for letting me include some of the default MameWAH config files and layouts
+      in the wah!cade package.
+    * Buks & battlecat for artwork, testing & suggestions.
+    * Robbforce for the Arch-Linux port, FreeBSD news, bug reports and suggestions.
+    * Sylvan Faveau, Settler, Mike Crawford, Mike Schwartz, nellistic, 3NF,
+      Bob Clough, Jim Merullo, Jose Herran & more for patches, bug reports and patience.
+    * The translators: SeTTleR, Nicolás Álvarez. Sylvan Faveau and Daniel Nylander.
+    * all the M.A.M.E. developers (http://www.mame.net/)
+    * all the x.mame developers (http://x.mame.net/)
+    * everyone from the forums who have helped out with bug reporting,
+      feature suggestions and more.
+
+
+Supported OS
+============
+Wah!Cade is developed on:
+* Ubuntu "Karmic Koala" 9.10 / sdlmame 0.132
+I've also had reports of it working on Arch, Debian (etch), Gentoo, FreeBSD,
+Mac OS X, Windows and even the PS3. YMMV.
+
+Comments
+========
+Check the Wah!Cade Forums:
+    http://www.anti-particle.com/forum
+If you have any bug reports, suggestions, features, patches or comments then
+please contact me at the address below...
+
+=================================================
+Wah!Cade is Copyright (c) 2005-2010 Andy Balcombe
+  email: wahcade at anti-particle dot com
+=================================================
+

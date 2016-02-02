@@ -1,0 +1,108 @@
+#!/bin/sh
+#install wah!cade
+NAME=wahcade
+LAYOUT_NAME=wahcade-layout-editor
+SETUP_NAME=wahcade-setup
+PREFIX=/usr/local
+BINDIR=$PREFIX/bin
+DESTDIR=$PREFIX/share/$NAME
+
+#wahcade start script
+echo "#!/bin/bash" > $BINDIR/$NAME
+echo "cd ${DESTDIR}" >> $BINDIR/$NAME
+echo "python ${NAME}.py \$*" >> $BINDIR/$NAME
+chmod 755 $BINDIR/$NAME
+
+#wahcade layout editor start script
+echo "#!/bin/bash" > $BINDIR/$LAYOUT_NAME
+echo "cd ${DESTDIR}" >> $BINDIR/$LAYOUT_NAME
+echo "python ${LAYOUT_NAME}.py \$*" >> $BINDIR/$LAYOUT_NAME
+chmod 755 $BINDIR/$LAYOUT_NAME
+
+#wahcade setup start script
+echo "#!/bin/bash" > $BINDIR/$SETUP_NAME
+echo "cd ${DESTDIR}" >> $BINDIR/$SETUP_NAME
+echo "python ${SETUP_NAME}.py \$*" >> $BINDIR/$SETUP_NAME
+chmod 755 $BINDIR/$SETUP_NAME
+
+#install files
+install -D --mode=755 $NAME.desktop $PREFIX/share/applications/$NAME.desktop
+install --directory $DESTDIR
+install --mode=644 *.py $DESTDIR
+install --directory $DESTDIR/config.dist
+install --directory $DESTDIR/config.dist/ctrlr
+install --directory $DESTDIR/config.dist/files
+install --directory $DESTDIR/config.dist/ini
+install --directory $DESTDIR/config.dist/layouts
+install --directory $DESTDIR/config.dist/layouts/classic_480x640
+install --directory $DESTDIR/config.dist/layouts/classic_640x480
+install --directory $DESTDIR/config.dist/layouts/classic_800x600
+install --directory $DESTDIR/config.dist/layouts/classic_1024x768
+install --directory $DESTDIR/config.dist/layouts/classic_cpviewer
+install --directory $DESTDIR/config.dist/layouts/classic_histview
+install --directory $DESTDIR/config.dist/layouts/retro_black_640x480
+install --directory $DESTDIR/config.dist/layouts/retro_black_800x600
+install --directory $DESTDIR/config.dist/layouts/retro_black_1024x768
+install --directory $DESTDIR/config.dist/layouts/retro_white_640x480
+install --directory $DESTDIR/config.dist/layouts/retro_white_800x600
+install --directory $DESTDIR/config.dist/layouts/retro_white_1024x768
+install --directory $DESTDIR/config.dist/layouts/retro_cpviewer
+install --directory $DESTDIR/config.dist/layouts/retro_histview
+install --directory $DESTDIR/doc
+install --directory $DESTDIR/doc/file_formats
+install --directory $DESTDIR/doc/xmame
+install --directory $DESTDIR/glade
+install --directory $DESTDIR/locale
+install --directory $DESTDIR/locale/de/
+install --directory $DESTDIR/locale/de/LC_MESSAGES
+install --directory $DESTDIR/locale/en_GB/
+install --directory $DESTDIR/locale/en_GB/LC_MESSAGES
+install --directory $DESTDIR/locale/en/
+install --directory $DESTDIR/locale/en/LC_MESSAGES
+install --directory $DESTDIR/locale/es/
+install --directory $DESTDIR/locale/es/LC_MESSAGES
+install --directory $DESTDIR/locale/fr/
+install --directory $DESTDIR/locale/fr/LC_MESSAGES
+install --directory $DESTDIR/locale/sv/
+install --directory $DESTDIR/locale/sv/LC_MESSAGES
+install --directory $DESTDIR/pixmaps
+install --directory $DESTDIR/templates
+#install --mode=644 ../common/glade2.py $DESTDIR
+install --mode=644 config.dist/* $DESTDIR/config.dist
+install --mode=644 config.dist/ctrlr/* $DESTDIR/config.dist/ctrlr
+install --mode=644 config.dist/files/.* $DESTDIR/config.dist/files
+install --mode=644 config.dist/ini/* $DESTDIR/config.dist/ini
+install --mode=644 config.dist/layouts/classic_480x640/* $DESTDIR/config.dist/layouts/classic_480x640
+install --mode=644 config.dist/layouts/classic_640x480/* $DESTDIR/config.dist/layouts/classic_640x480
+install --mode=644 config.dist/layouts/classic_800x600/* $DESTDIR/config.dist/layouts/classic_800x600
+install --mode=644 config.dist/layouts/classic_1024x768/* $DESTDIR/config.dist/layouts/classic_1024x768
+install --mode=644 config.dist/layouts/classic_cpviewer/* $DESTDIR/config.dist/layouts/classic_cpviewer
+install --mode=644 config.dist/layouts/classic_histview/* $DESTDIR/config.dist/layouts/classic_histview
+install --mode=644 config.dist/layouts/retro_black_640x480/* $DESTDIR/config.dist/layouts/retro_black_640x480
+install --mode=644 config.dist/layouts/retro_black_800x600/* $DESTDIR/config.dist/layouts/retro_black_800x600
+install --mode=644 config.dist/layouts/retro_black_1024x768/* $DESTDIR/config.dist/layouts/retro_black_1024x768
+install --mode=644 config.dist/layouts/retro_white_640x480/* $DESTDIR/config.dist/layouts/retro_white_640x480
+install --mode=644 config.dist/layouts/retro_white_800x600/* $DESTDIR/config.dist/layouts/retro_white_800x600
+install --mode=644 config.dist/layouts/retro_white_1024x768/* $DESTDIR/config.dist/layouts/retro_white_1024x768
+install --mode=644 config.dist/layouts/retro_cpviewer/* $DESTDIR/config.dist/layouts/retro_cpviewer
+install --mode=644 config.dist/layouts/retro_histview/* $DESTDIR/config.dist/layouts/retro_histview
+install --mode=644 doc/* $DESTDIR/doc
+install --mode=644 doc/file_formats/* $DESTDIR/doc/file_formats
+install --mode=644 doc/xmame/* $DESTDIR/doc/xmame
+install --mode=644 glade/*.glade $DESTDIR/glade
+install --mode=644 glade/*.png $DESTDIR/glade
+install --mode=644 locale/de/LC_MESSAGES/*.mo $DESTDIR/locale/de/LC_MESSAGES
+install --mode=644 locale/en_GB/LC_MESSAGES/*.mo $DESTDIR/locale/en_GB/LC_MESSAGES
+install --mode=644 locale/en/LC_MESSAGES/*.mo $DESTDIR/locale/en/LC_MESSAGES
+install --mode=644 locale/es/LC_MESSAGES/*.mo $DESTDIR/locale/es/LC_MESSAGES
+install --mode=644 locale/fr/LC_MESSAGES/*.mo $DESTDIR/locale/fr/LC_MESSAGES
+install --mode=644 locale/sv/LC_MESSAGES/*.mo $DESTDIR/locale/sv/LC_MESSAGES
+install --mode=644 pixmaps/*.png $DESTDIR/pixmaps
+install --mode=644 pixmaps/*.ico $DESTDIR/pixmaps
+install --mode=644 templates/*.ini $DESTDIR/templates
+install --mode=644 ${NAME}*.desktop /usr/share/applications
+install --mode=644 pixmaps/${NAME}*.png /usr/share/pixmaps
+
+#compile everything python
+python -c "import compileall; compileall.compile_dir('${DESTDIR}')"
+

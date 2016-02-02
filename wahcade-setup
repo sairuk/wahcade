@@ -1,0 +1,5 @@
+#!/bin/bash
+#start wahcade setup editor
+cd /usr/local/share/games/wahcade
+python wahcade-setup.py $*
+

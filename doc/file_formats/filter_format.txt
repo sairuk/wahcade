@@ -1,0 +1,25 @@
+mamewah filter list (.ftr) format
+=================================
+
+section desc
+------- ----
+1	filter type?  (emu-0.ftr = 1, emu-n.ftr = 2)
+2	year
+3	manufacturer
+4	driver?
+5	display type
+6	screen type
+7	controller type
+8	driver status
+9	colour status
+10	sound status
+11	category
+
+
+
+section split by blank line
+
+each entry is 2 lines:
+* line 1: item to filter by
+* line 2: True / False
+

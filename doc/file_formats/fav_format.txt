@@ -1,0 +1,11 @@
+mamewah favourite list (.fav) format
+====================================
+
+section desc
+------- ----
+1	rom name
+2	game desc
+3	no of times played
+4	no of minutes played
+
+

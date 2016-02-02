@@ -1,0 +1,12 @@
+[Desktop Entry]
+Version=0.26
+Encoding=UTF-8
+Name=Wah!Cade
+Comment=Play classic arcade games
+Exec=wahcade
+Terminal=false
+Type=Application
+Icon=wahcade.png
+Categories=Game;ArcadeGame;
+StartupNotify=False
+GenericName[en_GB]=

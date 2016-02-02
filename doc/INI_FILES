@@ -1,0 +1,187 @@
+Wah!Cade INI FILES
+==================
+
+* N/A = currently ignored by Wah!Cade.
+* also see: http://wiki.arcadecontrols.com/wiki/Mamewah_161_Ini_Description
+
+wahcade.ini - wahcade options
+-----------------------------
+### wahcade.ini (wahcade v0.99) ###
+
+### Addtionnal Wah!Cade Options ###
+fullscreen                  0                              #fullscreen display (0=no, 1=yes)
+setup_window_size           400x200                        #size of Setup Editor window (width x height)
+layout_orientation          0                              #orientation of current layout (0,90,180,270 degrees).
+show_list_arrows            0                              #show scroll up/down arrows in games, options and history lists (0=no, 1=yes)
+shuffle_music               0                              #shuffle music playlist when loaded (0=no, 1=yes)
+
+### (Global) Screen-Saver Options ###
+delay                       300                            #screen saver delay in seconds (0 to disable)
+slide_duration              5                              #screen saver image / movie display in seconds
+
+### Audio Options ###
+enable_sounds               0                              #N/A
+sound_volume                100                            #N/A
+music_path                                                 #directory to play music from
+enable_music                0                              #play music (0=no, 1=yes)
+music_volume                100                            #movie volume (0-100%)
+
+### Movie Options ###
+intro_movie_file                                           #intro movie filename
+exit_movie_file                                            #exit movie filename
+keep_movie_preview_aspect   game_aspect                    #N/A
+delay_before_movie_preview  7                              #movie delay in seconds (0 to disable ALL movie playback)
+music_movie_mix             mute_movies                    #mute_movies / merge
+movie_volume                100                            #movie volume (0-100%)
+
+### Misc Options ###
+layout                      mr_salty_800x600               #layout directory name (in ~/wahcade/layouts): see LAYOUT_EDITOR doc for more info
+ctrlr                       default.ini                    #N/A
+wrap_list                   0                              #wrap the game / option list when scrolling (0=no, 1=yes)
+remember_current_game       1                              #N/A
+keep_image_aspect           1                              #display correctly scaled images (0=no, 1=yes)
+refresh_images              0                              #N/A
+correct_orientations        horizontal                     #N/A
+safe_mode                   0                              #N/A
+show_cursor                 0                              #display mouse cursor (0=no, 1=yes)
+keyboard_led_states         -,-,-                          #N/A
+winipac_file                                               #N/A
+mamewah_ipc_file                                           #N/A
+lcd_com_port                1                              #N/A
+lcd_settings                                               #N/A
+exit_action                 choice                         #N/A
+app_to_run_on_exit                                         #N/A
+
+### Settings used by MAMEWAH ###
+current_emulator            mame                           #currently selected emulator
+locked                      0                              #N/A
+last_ipc                                                   #N/A
+
+
+
+histview.ini - wah!cade mame history viewer options
+---------------------------------------------------
+### histview.ini (wahcade v0.16) ###
+
+history_dat_file                          ~/emulators/mame/history.dat       #location of mame history.dat file
+history_layout                            ~/.wahcade/cpviewer/example.lay    #location of history viewer layout file (.lay)
+
+
+
+cpviewer.ini - wah!cade mame control panel viewer options
+---------------------------------------------------------
+### cpviewer.ini (wahcade v0.12) ###
+controls_ini_file                         ~/emulators/mame/controls.ini      #location of mame control.ini file
+viewer_layout                             ~/.wahcade/cpviewer/example.lay    #location of viewer layout file (.lay)
+
+
+
+emu_name.ini - global emulator options
+--------------------------------------
+### mame.ini (wahcade v0.8) ###
+
+emulator_title                            M.A.M.E.                           #title of your choice - displayed in layout
+
+### List Generation Settings ###
+rom_path                                  ~/emulators/mame/roms              #path to the mame roms
+rom_extension                             zip                                #file extension
+dat_file                                  ~/emulators/mame/mameinfo.xml      #path to mame .xml or .dat info file
+nms_file                                                                     #path to nms info file
+catver_ini_file                           ~/emulators/mame/catver.ini        #path to mame category info file
+list_generation_method                    rom_folder_vs_listxml              #list_xml / rom_folder_vs_listxml / dat_file / rom_folder_vs_dat_file / rom_folder
+                                                                             #for emulators other than mame, only the "rom_folder" method is supported
+### Execution Settings ###
+emulator_executable                       /usr/games/xmame.x11               #path to emulator application
+commandline_format                        [name]                             #emulator application command line options (see Notes)
+alt_commandline_format_1                  [name]                             #                     "
+alt_commandline_format_2                  [name]                             #                     "
+game_specific_config_path                                                    #N/A
+
+### Artwork Locations ###
+artwork_1_image_path                      ~/emulators/mame/snap              #path to images for main window layouts artwork #1
+artwork_2_image_path                      ~/emulators/mame/cpanel            #                     " #2
+artwork_3_image_path                      ~/emulators/mame/marquees          #                     " #3
+artwork_4_image_path                                                         #                     " #4
+artwork_5_image_path                                                         #                     " #5
+artwork_6_image_path                                                         #                     " #6
+artwork_7_image_path                                                         #                     " #7
+artwork_8_image_path                                                         #                     " #8
+artwork_9_image_path                                                         #                     " #9
+artwork_10_image_path                                                        #                     " #10
+movie_preview_path                        ~/emulators/mame/videos            #path to videos (must also be set for movie screensaver)
+movie_artwork_no                          1                                  #artwork number to display video in (must also be set for movie screensaver)
+
+### Screen-Saver Settings ###
+enable_music_in_screensaver               1                                  #N/A
+saver_type                                slideshow                          #slideshow / blank_screen / movie / launch_scr
+movie_path                                ~/emulators/mame/videos            #movie directory
+movie_fullscreen                          1                                  #N/A
+quit_delay                                30                                 #N/A
+wrapper_executable                                                           #N/A
+wrapper_commandline_format                [name]                             #N/A
+scr_file                                                                     #used for launch_scr option above, command to start a screen saver (eg. gnome-screensaver-command -a)
+
+### External Application Settings ###
+ipc_file_or_path                                                             #N/A
+app_1_executable                          wahcade-history-viewer             #wahcade-history-viewer / wahcade-cp-viewer / external application #1 filename
+app_1_commandline_format                                                     #external application #1 parameters (see Notes)
+app_2_executable                          wahcade-cp-viewer                  #wahcade-history-viewer / wahcade-cp-viewer / external application #2 filename
+app_2_commandline_format                                                     #external application #2 parameters (see Notes)
+app_3_executable                                                             #wahcade-history-viewer / wahcade-cp-viewer / external application #2 filename
+app_3_commandline_format                                                     #external application #3 parameters (see Notes)
+auto_launch_apps                                                             #the order apps are launched prior to the emulator, eg 1,2,3 or 3,2,1 or 1,2 or 1 etc.
+
+### Additional Settings ###
+music_path                                                                   #N/A
+lcd_display_file_path                                                        #N/A
+lcd_fe_text                                                                  #N/A
+
+### Settings used by MAMEWAH ###
+current_list                              0                                  #current list number
+
+
+
+emu_name-xx.ini - emulator list options
+---------------------------------------
+### mame-1.ini (wahcade v0.8) ###
+
+list_title                                Favourites       #title of your choice
+
+### Games List Settings ###
+cycle_list                                1                #include this list when changing to next / previous lists
+list_type                                 normal           #the type of list:  normal / most_played / longest_played
+display_clone_info                        0                #N/A
+max_favorites                             0                #N/A
+
+### Execution Settings ###
+commandline_format                                         #emulator application command line options (see Notes)
+alt_commandline_format_1                                   #                     "
+alt_commandline_format_2                                   #                     "
+
+### Settings used by Wah!Cade ###
+current_game                              0                #currently selected game in list
+
+
+Notes:
+------
+* for information on configuring the keyboard, mouse & joystick see the KEYS document.
+* emu_name-0.ini does not have the list_type, display_clone_info or max_favorites
+  settings, as these properties for the main list are fixed.
+
+* commandline_format flags:
+  As well as regular switches etc., the following strings can be used, which Wah!Cade will replace
+  with information on the currently selected game when the application is launched:
+    [name] is replaced by rom name
+    [rompath] is replaced by rom_path
+    [romext] is replaced by rom_extension (exluding the '.')
+    [autorotate] will rotate the game to match the current layouts rotation (Mame only)
+    [year] is replaced by rom year
+    [manufacturer] is replaced by rom manufacturer
+    [clone_of] is replaced by "parent" rom name
+    [display_type] is replaced by display type
+    [screen_type] is replaced by screen type
+    [category] is replaced by rom category
+  Flags in {curley brackets} are not used in the actual commandline sent to the emulator.
+    {minimize} Wah!Cade will minimize itself when the emulator is launched
+    {music} - this allows music playback to continue while emulator/app is running
+

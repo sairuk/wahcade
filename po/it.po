@@ -1,0 +1,1602 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-05-01 19:19+1000\n"
+"PO-Revision-Date: 2009-07-04 16:23+0100\n"
+"Last-Translator: Diego Pierotto <ita.translations@tiscali.it>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: Italian\n"
+"X-Poedit-Country: ITALY\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+
+#: /home/wmoulden/projects/wahcade/exception.py:49
+msgid "<big><b>Error</b></big>"
+msgstr "<big><b>Errore</b></big>"
+
+#: /home/wmoulden/projects/wahcade/exception.py:50
+msgid "Bug Detected"
+msgstr "Rilevato un bug"
+
+#: /home/wmoulden/projects/wahcade/filters.py:297
+#, python-format
+msgid "Error: category info file: [%s] does not exist"
+msgstr "Errore: file info categoria: [%s] inesistente"
+
+#: /home/wmoulden/projects/wahcade/filters.py:317
+#, python-format
+msgid "Error: rom path: [%s] does not exist"
+msgstr "Errore: il percorso ROM: [%s] non esiste"
+
+#: /home/wmoulden/projects/wahcade/filters.py:373
+#, python-format
+msgid "Error: emulator info file: [%s] does not exist"
+msgstr "Errore: file info emulatore: [%s] inesistente"
+
+#: /home/wmoulden/projects/wahcade/filters.py:374
+msgid "       cannot create initial filters!"
+msgstr "       impossibile creare filtri iniziali!"
+
+#: /home/wmoulden/projects/wahcade/filters.py:426
+#, python-format
+msgid "Error: filter file: [%s] does not exist"
+msgstr "Errore: il file filtro: [%s non esiste"
+
+#: /home/wmoulden/projects/wahcade/filters.py:436
+#, python-format
+msgid "Error: filter file: [%s] invalid (too short!)"
+msgstr "Errore: file filtro: [%s] non valido (troppo corto!)"
+
+#: /home/wmoulden/projects/wahcade/filters.py:664
+#, python-format
+msgid "Error: nms file [%s] does not exist"
+msgstr "Errore: il file NMS [%s] non esiste"
+
+#: /home/wmoulden/projects/wahcade/joystick.py:35
+msgid "Warning: pygame module not found.  Joysticks not supported"
+msgstr "Attenzione: modulo pygame non trovato, Joystick non supportati"
+
+#: /home/wmoulden/projects/wahcade/joystick.py:98
+#, python-format
+msgid "Joystick %s Button %s"
+msgstr "Joystick %s Pulsante %s"
+
+#: /home/wmoulden/projects/wahcade/joystick.py:104
+#, python-format
+msgid "Joystick %s "
+msgstr "Joystick %s "
+
+#: /home/wmoulden/projects/wahcade/joystick.py:109
+msgid "Up"
+msgstr "Su"
+
+#: /home/wmoulden/projects/wahcade/joystick.py:110
+msgid "Down"
+msgstr "Giù"
+
+#: /home/wmoulden/projects/wahcade/joystick.py:111
+#: /home/wmoulden/projects/wahcade/glade/layout_editor.glade.h:28
+msgid "Left"
+msgstr "Sinistra"
+
+#: /home/wmoulden/projects/wahcade/joystick.py:112
+#: /home/wmoulden/projects/wahcade/glade/layout_editor.glade.h:39
+msgid "Right"
+msgstr "Destra"
+
+#: /home/wmoulden/projects/wahcade/layout_editor.py:78
+msgid "No Wah!Cade config files found.  Run wahcade or wahcade-setup first."
+msgstr ""
+"Nessun file di configurazione di Wah!Cade trovato.  Avvia prima wahcade o "
+"wahcade-setup."
+
+#: /home/wmoulden/projects/wahcade/layout_editor.py:309
+msgid "Save:"
+msgstr "Salva:"
+
+#: /home/wmoulden/projects/wahcade/layout_editor.py:311
+msgid ""
+"\n"
+"  Wah!Cade Layout"
+msgstr ""
+"\n"
+"  Formato Wah!Cade"
+
+#: /home/wmoulden/projects/wahcade/layout_editor.py:313
+msgid ""
+"\n"
+"  CPViewer Layout"
+msgstr ""
+"\n"
+"  Formato visualizzatore PC"
+
+#: /home/wmoulden/projects/wahcade/layout_editor.py:315
+msgid ""
+"\n"
+"  History Viewer Layout"
+msgstr ""
+"\n"
+"  Formato visualizzatore Cronologia"
+
+#: /home/wmoulden/projects/wahcade/layout_editor.py:384
+msgid "Open Wah!Cade Layout"
+msgstr "Apri formato Wah!Cade"
+
+#: /home/wmoulden/projects/wahcade/layout_editor.py:392
+msgid "Open CP Viewer Layout"
+msgstr "Apri formato visualizzatore PC"
+
+#: /home/wmoulden/projects/wahcade/layout_editor.py:400
+msgid "Open History Viewer Layout"
+msgstr "Apri formato visualizzatore Cronologia"
+
+#: /home/wmoulden/projects/wahcade/layout_editor.py:417
+msgid "Save Wah!Cade Layout"
+msgstr "Salva formato Wah!Cade"
+
+#: /home/wmoulden/projects/wahcade/layout_editor.py:425
+msgid "Save CP Viewer Layout"
+msgstr "Salva formato visualizzatore PC"
+
+#: /home/wmoulden/projects/wahcade/layout_editor.py:433
+msgid "Save History Viewer Layout"
+msgstr "Salva formato visualizzatore Cronologia"
+
+#: /home/wmoulden/projects/wahcade/wahcade-layout-editor.py:47
+msgid ""
+"Use application config location (i.e. wahcade/config instead of the default "
+"~/.wahcade)"
+msgstr ""
+"Utilizza percorso configurazione applicazione (es. wahcade/config invece di "
+"~/.wahcade)"
+
+#: /home/wmoulden/projects/wahcade/wahcade-layout-editor.py:52
+#: /home/wmoulden/projects/wahcade/wahcade.py:55
+msgid "Set debug mode (disables psyco)"
+msgstr "Imposta modalità debug (disabilita psyco)"
+
+#: /home/wmoulden/projects/wahcade/wahcade.py:45
+msgid "Set windowed mode"
+msgstr "Imposta modalità finestra"
+
+#: /home/wmoulden/projects/wahcade/wahcade.py:50
+msgid "Set fullscreen mode"
+msgstr "Imposta modalità a schermo intero"
+
+#: /home/wmoulden/projects/wahcade/wahcade.py:60
+msgid "Set to disable all gstreamer use (music / video playback)"
+msgstr "Disabilita uso completo di gstreamer (riproduzione musica / video)"
+
+#: /home/wmoulden/projects/wahcade/wahcade.py:65
+#, fuzzy
+msgid "Set to disable all pygame use (joysticks)"
+msgstr "Disabilita uso completo di gstreamer (riproduzione musica / video)"
+
+#: /home/wmoulden/projects/wahcade/wahcade.py:70
+msgid "Set to revert to old keyboard event handling"
+msgstr ""
+
+#: /home/wmoulden/projects/wahcade/wc_common.py:335
+msgid "translator-credits"
+msgstr "Diego Pierotto <ita.translations@tiscali.it>, 2009"
+
+#: /home/wmoulden/projects/wahcade/wc_setup.py:41
+msgid "Mouse Button 1"
+msgstr "Pulsante mouse 1"
+
+#: /home/wmoulden/projects/wahcade/wc_setup.py:42
+msgid "Mouse Button 2"
+msgstr "Pulsante mouse 2"
+
+#: /home/wmoulden/projects/wahcade/wc_setup.py:43
+msgid "Mouse Button 3"
+msgstr "Pulsante mouse 3"
+
+#: /home/wmoulden/projects/wahcade/wc_setup.py:44
+msgid "Mouse Button 4"
+msgstr "Pulsante mouse 4"
+
+#: /home/wmoulden/projects/wahcade/wc_setup.py:45
+msgid "Mouse Button 5"
+msgstr "Pulsante mouse 5"
+
+#: /home/wmoulden/projects/wahcade/wc_setup.py:46
+msgid "Mouse Button 6"
+msgstr "Pulsante mouse 6"
+
+#: /home/wmoulden/projects/wahcade/wc_setup.py:47
+msgid "Mouse Button 7"
+msgstr "Pulsante mouse 7"
+
+#: /home/wmoulden/projects/wahcade/wc_setup.py:48
+msgid "Mouse Button 8"
+msgstr "Pulsante mouse 8"
+
+#: /home/wmoulden/projects/wahcade/wc_setup.py:49
+msgid "Mouse Button 9"
+msgstr "Pulsante mouse 9"
+
+#: /home/wmoulden/projects/wahcade/wc_setup.py:50
+msgid "Mouse Left"
+msgstr "Pulsante mouse sinistro"
+
+#: /home/wmoulden/projects/wahcade/wc_setup.py:51
+msgid "Mouse Right"
+msgstr "Pulsante mouse destro"
+
+#: /home/wmoulden/projects/wahcade/wc_setup.py:52
+msgid "Mouse Up"
+msgstr "Pulsante mouse Su"
+
+#: /home/wmoulden/projects/wahcade/wc_setup.py:53
+msgid "Mouse Down"
+msgstr "Pulsante mouse Giù"
+
+#: /home/wmoulden/projects/wahcade/wc_setup.py:54
+msgid "Scroll Wheel Down"
+msgstr "Rotellina mouse Giù"
+
+#: /home/wmoulden/projects/wahcade/wc_setup.py:55
+msgid "Scroll Wheel Up"
+msgstr "Rotellina mouse Su"
+
+#: /home/wmoulden/projects/wahcade/wc_setup.py:70
+msgid "Select an Emulator Template..."
+msgstr "Seleziona modello emulatore..."
+
+#: /home/wmoulden/projects/wahcade/wc_setup.py:107
+msgid "Save Emulator File"
+msgstr "Salva file emulatore"
+
+#: /home/wmoulden/projects/wahcade/wc_setup.py:138
+msgid "Emulator already exists!"
+msgstr "Emulatore già presente!"
+
+#: /home/wmoulden/projects/wahcade/wc_setup.py:237
+msgid "Could not recognize key"
+msgstr "Impossibile riconoscere il tasto"
+
+#: /home/wmoulden/projects/wahcade/wc_setup.py:271
+msgid "Double-Click a row to change a Key..."
+msgstr "Doppio click sulla riga per cambiare un tasto..."
+
+#: /home/wmoulden/projects/wahcade/wc_setup.py:351
+msgid "Are you sure you want to revert to the default settings?"
+msgstr "Sei sicuro di voler ripristinare le opzioni predefinite?"
+
+#: /home/wmoulden/projects/wahcade/wc_setup.py:369
+msgid "Are you sure you want to reset the file filters?"
+msgstr "Sei sicuro di voler ripristinare il file dei filtri?"
+
+#: /home/wmoulden/projects/wahcade/wc_setup.py:413
+#, python-format
+msgid ""
+"\"%s\" is already assigned to the following actions:\n"
+"%s\n"
+msgstr ""
+"\"%s\"  è già associato alle seguenti azioni: \n"
+"%s\n"
+
+#: /home/wmoulden/projects/wahcade/wc_setup.py:416
+msgid "Keep existing assignments?"
+msgstr "Mantenere le associazioni esistenti?"
+
+#: /home/wmoulden/projects/wahcade/wc_setup.py:514
+#: /home/wmoulden/projects/wahcade/glade/wahcade_setup.glade.h:150
+msgid "Set Intro Movie"
+msgstr "Imposta video introduttivo"
+
+#: /home/wmoulden/projects/wahcade/wc_setup.py:521
+#: /home/wmoulden/projects/wahcade/glade/wahcade_setup.glade.h:148
+msgid "Set Exit Movie"
+msgstr "Imposta video di uscita"
+
+#: /home/wmoulden/projects/wahcade/wc_setup.py:543
+#, python-format
+msgid "Are you sure you delete this Emulator (%s)?"
+msgstr "Sei sicuro di voler eliminare questo emulatore (%s)?"
+
+#: /home/wmoulden/projects/wahcade/wc_setup.py:581
+#, python-format
+msgid "Are you sure you want to delete this List (%s)?"
+msgstr "Sei sicuro di voler eliminare questo elenco (%s)?"
+
+#: /home/wmoulden/projects/wahcade/wc_setup.py:640
+msgid "Set Emulator Executable"
+msgstr "Imposta file eseguibile dell'emulatore"
+
+#: /home/wmoulden/projects/wahcade/wc_setup.py:647
+msgid "Set Rom Directory"
+msgstr "Imposta directory ROM"
+
+#: /home/wmoulden/projects/wahcade/wc_setup.py:654
+msgid "Set NMS File"
+msgstr "Imposta file NMS"
+
+#: /home/wmoulden/projects/wahcade/wc_setup.py:661
+msgid "Set Screen Saver Movie Directory"
+msgstr "Imposta directory video Salva schermo"
+
+#: /home/wmoulden/projects/wahcade/wc_setup.py:668
+msgid "Set External Screen Saver"
+msgstr "Imposta Salva schermo esterno"
+
+#: /home/wmoulden/projects/wahcade/wc_setup.py:676
+#, python-format
+msgid "Set Artwork #%s Directory"
+msgstr "Imposta directory sfondo #%s"
+
+#: /home/wmoulden/projects/wahcade/wc_setup.py:683
+msgid "Set Movie Directory"
+msgstr "Imposta directory video"
+
+#: /home/wmoulden/projects/wahcade/wc_setup.py:696
+#, fuzzy
+msgid "Set External Application"
+msgstr "Applicazioni esterne"
+
+#: /home/wmoulden/projects/wahcade/wc_setup.py:703
+msgid "Set Mame XML / Data File"
+msgstr "Imposta file XML / Dati di MAME"
+
+#: /home/wmoulden/projects/wahcade/wc_setup.py:710
+msgid "Set Mame Category Version File"
+msgstr "Imposta file versione categoria di MAME"
+
+#: /home/wmoulden/projects/wahcade/wc_setup.py:717
+msgid "Set History Viewer history.dat File"
+msgstr "Imposta file history.dat visualizzatore Cronologia"
+
+#: /home/wmoulden/projects/wahcade/wc_setup.py:724
+msgid "Set History Viewer Layout File"
+msgstr "Imposta file formato visualizzatore Cronologia"
+
+#: /home/wmoulden/projects/wahcade/wc_setup.py:731
+msgid "Set Control Panel Viewer controls.ini File"
+msgstr "Imposta file controls.ini visualizzatore Pannello di Controllo"
+
+#: /home/wmoulden/projects/wahcade/wc_setup.py:738
+msgid "Set Control Panel Viewer Layout File"
+msgstr "Imposta file formato visualizzatore Pannello di Controllo"
+
+#: /home/wmoulden/projects/wahcade/wc_setup.py:745
+msgid "Please select MAME Emulator first"
+msgstr "Seleziona prima l'emulatore MAME"
+
+#: /home/wmoulden/projects/wahcade/wc_setup.py:750
+msgid "Please select valid MAME Application first"
+msgstr "Seleziona prima un'applicazione MAME valida"
+
+#: /home/wmoulden/projects/wahcade/wc_setup.py:758
+msgid "Please Wait. Creating XML File..."
+msgstr "Attendere prego. Creazione file XML..."
+
+#: /home/wmoulden/projects/wahcade/wc_setup.py:799
+msgid "Save changes?"
+msgstr "Salvare le modifiche?"
+
+#: /home/wmoulden/projects/wahcade/win_filter.py:69
+msgid "Filter"
+msgstr "Filtro"
+
+#: /home/wmoulden/projects/wahcade/win_filter.py:77
+msgid "Selected?"
+msgstr "Selezionato?"
+
+#: /home/wmoulden/projects/wahcade/win_filter.py:113
+#: /home/wmoulden/projects/wahcade/win_list.py:91
+#, python-format
+msgid "Error: Emulator Ini file: [%s] doesn't exist"
+msgstr "Errore: file ini emulatore: [%s] inesistente"
+
+#: /home/wmoulden/projects/wahcade/win_filter.py:118
+#: /home/wmoulden/projects/wahcade/win_options.py:127
+msgid "No"
+msgstr "No"
+
+#: /home/wmoulden/projects/wahcade/win_filter.py:119
+#: /home/wmoulden/projects/wahcade/win_options.py:128
+msgid "Yes"
+msgstr "Sì"
+
+#: /home/wmoulden/projects/wahcade/win_filter.py:120
+#: /home/wmoulden/projects/wahcade/win_options.py:129
+msgid "Only if better than Parent"
+msgstr "Solo se meglio del precedente"
+
+#: /home/wmoulden/projects/wahcade/win_filter.py:122
+#: /home/wmoulden/projects/wahcade/win_options.py:105
+msgid "Display Clones"
+msgstr "Mostra cloni"
+
+#: /home/wmoulden/projects/wahcade/win_filter.py:123
+#: /home/wmoulden/projects/wahcade/win_options.py:106
+msgid "Year Filters"
+msgstr "Filtro anno"
+
+#: /home/wmoulden/projects/wahcade/win_filter.py:124
+#: /home/wmoulden/projects/wahcade/win_options.py:107
+msgid "Manufacturer Filters"
+msgstr "Filtro produttore"
+
+#: /home/wmoulden/projects/wahcade/win_filter.py:125
+#: /home/wmoulden/projects/wahcade/win_options.py:108
+msgid "BIOS Filters"
+msgstr "Filtro BIOS"
+
+#: /home/wmoulden/projects/wahcade/win_filter.py:126
+#: /home/wmoulden/projects/wahcade/win_options.py:109
+msgid "Screen Type Filters"
+msgstr "Filtro tipo di schermo"
+
+#: /home/wmoulden/projects/wahcade/win_filter.py:127
+#: /home/wmoulden/projects/wahcade/win_options.py:110
+msgid "Screen Orientation Filters"
+msgstr "Filtro orientamento schermo"
+
+#: /home/wmoulden/projects/wahcade/win_filter.py:128
+#: /home/wmoulden/projects/wahcade/win_options.py:111
+msgid "Input Type Filters"
+msgstr "Filtro tipo di ingresso"
+
+#: /home/wmoulden/projects/wahcade/win_filter.py:129
+#: /home/wmoulden/projects/wahcade/win_options.py:112
+msgid "General Status Filters"
+msgstr "Filtro Filtri generali di modifica"
+
+#: /home/wmoulden/projects/wahcade/win_filter.py:130
+#: /home/wmoulden/projects/wahcade/win_options.py:113
+msgid "Colour Status Filters"
+msgstr "Filtro stato colore"
+
+#: /home/wmoulden/projects/wahcade/win_filter.py:131
+#: /home/wmoulden/projects/wahcade/win_options.py:114
+msgid "Sound Status Filters"
+msgstr "Filtro stato suono"
+
+#: /home/wmoulden/projects/wahcade/win_filter.py:132
+#: /home/wmoulden/projects/wahcade/win_filter.py:134
+#: /home/wmoulden/projects/wahcade/win_options.py:115
+msgid "Category Filters"
+msgstr "Filtro categoria"
+
+#: /home/wmoulden/projects/wahcade/win_filter.py:150
+msgid "Save filter changes?"
+msgstr "Salvare modifiche dei filtri?"
+
+#: /home/wmoulden/projects/wahcade/win_filter.py:249
+msgid "List Type must be \"normal\" to generate filters"
+msgstr "Il tipo elenco deve essere \"normale\" per generare i filtri"
+
+#: /home/wmoulden/projects/wahcade/win_filter.py:340
+msgid "No Games"
+msgstr "Nessun gioco"
+
+#: /home/wmoulden/projects/wahcade/win_filter.py:349
+#: /home/wmoulden/projects/wahcade/win_list.py:227
+#, python-format
+msgid "%s games"
+msgstr "%s giochi"
+
+#: /home/wmoulden/projects/wahcade/win_list.py:161
+msgid "You must set a rom name"
+msgstr "Devi impostare un nome ROM"
+
+#: /home/wmoulden/projects/wahcade/win_list.py:194
+#: /home/wmoulden/projects/wahcade/win_main.py:1469
+msgid "Please Wait. Creating initial filter..."
+msgstr "Attendere prego. Creazione filtro iniziale..."
+
+#: /home/wmoulden/projects/wahcade/win_list.py:216
+msgid "Save List changes?"
+msgstr "Salvare modifiche nell'elenco?"
+
+#: /home/wmoulden/projects/wahcade/win_main.py:810
+#, python-format
+msgid "Game %s of %s selected"
+msgstr "Gioco %s di %s selezionati"
+
+#: /home/wmoulden/projects/wahcade/win_main.py:814
+#, python-format
+msgid "%s (Clone of %s)"
+msgstr "%s (clone di %s)"
+
+#: /home/wmoulden/projects/wahcade/win_main.py:849
+#, python-format
+msgid "Error: wrong screen saver type: [%s]"
+msgstr "Errore: tipo di Salva schermo errato: [%s]"
+
+#: /home/wmoulden/projects/wahcade/win_main.py:973
+#, python-format
+msgid "Emulator Executable [%s] does not exist"
+msgstr "Il file eseguibile dell'emulatore [%s] non esiste"
+
+#: /home/wmoulden/projects/wahcade/win_main.py:976
+msgid "Error!"
+msgstr "Errore!"
+
+#: /home/wmoulden/projects/wahcade/win_main.py:978
+msgid "Press key to continue..."
+msgstr "Premi un tasto per continuare..."
+
+#: /home/wmoulden/projects/wahcade/win_main.py:987
+msgid "Starting..."
+msgstr "Avvio..."
+
+#: /home/wmoulden/projects/wahcade/win_main.py:1126
+#, python-format
+msgid "Error: External Application [%s] does not exist"
+msgstr "Errore: applicazione esterna [%s] inesistente"
+
+#: /home/wmoulden/projects/wahcade/win_main.py:1201
+#: /home/wmoulden/projects/wahcade/win_main.py:1470
+msgid "Please Wait"
+msgstr "Attendere prego"
+
+#: /home/wmoulden/projects/wahcade/win_main.py:1201
+#: /home/wmoulden/projects/wahcade/win_main.py:1470
+msgid "Creating initial filter..."
+msgstr "Creazione filtro iniziale..."
+
+#: /home/wmoulden/projects/wahcade/win_main.py:1383
+#: /home/wmoulden/projects/wahcade/win_options.py:171
+msgid "Options"
+msgstr "Opzioni"
+
+#: /home/wmoulden/projects/wahcade/win_main.py:1384
+#: /home/wmoulden/projects/wahcade/win_options.py:174
+msgid "Current Setting:"
+msgstr "Impostazioni attuali:"
+
+#: /home/wmoulden/projects/wahcade/win_options.py:89
+msgid "Select Platform"
+msgstr "Seleziona piattaforma"
+
+#: /home/wmoulden/projects/wahcade/win_options.py:90
+msgid "Select Game List"
+msgstr "Seleziona elenco giochi"
+
+#: /home/wmoulden/projects/wahcade/win_options.py:91
+msgid "Find Game"
+msgstr "Cerca gioco"
+
+#: /home/wmoulden/projects/wahcade/win_options.py:92
+msgid "Select Random Game"
+msgstr "Seleziona un gioco a caso"
+
+#: /home/wmoulden/projects/wahcade/win_options.py:93
+msgid "Games List Options"
+msgstr "Opzioni elenco giochi"
+
+#: /home/wmoulden/projects/wahcade/win_options.py:95
+msgid "Music Options"
+msgstr "Opzioni Musica"
+
+#: /home/wmoulden/projects/wahcade/win_options.py:96
+msgid "About..."
+msgstr "Informazioni..."
+
+#: /home/wmoulden/projects/wahcade/win_options.py:97
+msgid "Exit Wah!Cade"
+msgstr "Esci da Wah!Cade"
+
+#: /home/wmoulden/projects/wahcade/win_options.py:100
+msgid "Add Game to List"
+msgstr "Aggiungi gioco all'elenco"
+
+#: /home/wmoulden/projects/wahcade/win_options.py:101
+msgid "Remove Game from List"
+msgstr "Rimuovi gioco dall'elenco"
+
+#: /home/wmoulden/projects/wahcade/win_options.py:102
+msgid "Generate Filtered List..."
+msgstr "Genera elenco filtrato..."
+
+#: /home/wmoulden/projects/wahcade/win_options.py:103
+msgid "Generate List..."
+msgstr "Genera elenco..."
+
+#: /home/wmoulden/projects/wahcade/win_options.py:117
+msgid "Play / Pause"
+msgstr "Riproduci / Pausa"
+
+#: /home/wmoulden/projects/wahcade/win_options.py:118
+msgid "Next Track"
+msgstr "Traccia Successiva"
+
+#: /home/wmoulden/projects/wahcade/win_options.py:119
+msgid "Previous Track"
+msgstr "Traccia Precedente"
+
+#: /home/wmoulden/projects/wahcade/win_options.py:120
+msgid "Select Track / Directory"
+msgstr "Seleziona traccia / DIrectory"
+
+#: /home/wmoulden/projects/wahcade/win_options.py:122
+msgid "Exit to Desktop"
+msgstr "Esci nel desktop"
+
+#: /home/wmoulden/projects/wahcade/win_options.py:123
+msgid "Exit & Reboot"
+msgstr "Esci e riavvia"
+
+#: /home/wmoulden/projects/wahcade/win_options.py:124
+msgid "Exit & Shutdown"
+msgstr "Esci e spegni"
+
+#: /home/wmoulden/projects/wahcade/win_options.py:228
+#: /home/wmoulden/projects/wahcade/win_options.py:267
+msgid "Please Wait..."
+msgstr "Attendere prego... "
+
+#: /home/wmoulden/projects/wahcade/win_options.py:229
+msgid "Generating new games list..."
+msgstr "Generazione elenco dei giochi..."
+
+#: /home/wmoulden/projects/wahcade/win_options.py:263
+msgid "Show ALL"
+msgstr "Mostra TUTTI"
+
+#: /home/wmoulden/projects/wahcade/win_options.py:264
+msgid "Show NONE"
+msgstr "NON mostrare"
+
+#: /home/wmoulden/projects/wahcade/win_options.py:268
+msgid "Generating new filtered games list..."
+msgstr "Generazione nuovo elenco giochi filtrato..."
+
+#: /home/wmoulden/projects/wahcade/glade/wahcade_setup.glade.h:1
+msgid "\"Wrap Around\" the Games List & Options menu."
+msgstr "\"Racchiudi\" i menu Elenco giochi & Opzioni"
+
+#: /home/wmoulden/projects/wahcade/glade/wahcade_setup.glade.h:2
+msgid "# Games"
+msgstr "# Giochi"
+
+#: /home/wmoulden/projects/wahcade/glade/wahcade_setup.glade.h:3
+msgid "<b>Emulator</b>"
+msgstr "<b>Emulatore</b>"
+
+#: /home/wmoulden/projects/wahcade/glade/wahcade_setup.glade.h:4
+msgid "<b>Test:</b>"
+msgstr "<b>Prova:</b>"
+
+#: /home/wmoulden/projects/wahcade/glade/wahcade_setup.glade.h:5
+msgid "<b>or</b>"
+msgstr "<b>o</b>"
+
+#: /home/wmoulden/projects/wahcade/glade/wahcade_setup.glade.h:6
+msgid "Add Emulator"
+msgstr "Aggiungi emulatore"
+
+#: /home/wmoulden/projects/wahcade/glade/wahcade_setup.glade.h:7
+msgid "Add New Emulator"
+msgstr "Aggiungi nuovo emulatore"
+
+#: /home/wmoulden/projects/wahcade/glade/wahcade_setup.glade.h:8
+msgid "Add new List"
+msgstr "Aggiungi nuovo elenco"
+
+#: /home/wmoulden/projects/wahcade/glade/wahcade_setup.glade.h:9
+msgid "Also see the \"Display Mouse Cursor\" option (Wah!Cade Tab)"
+msgstr "Vedi anche l'opzione \"Mostra cursore mouse\" (scheda Wah!Cade)"
+
+#: /home/wmoulden/projects/wahcade/glade/wahcade_setup.glade.h:10
+msgid "Also see the \"Use Mouse\" option (Keys Tab)"
+msgstr "Vedi anche l'opzione \"Utilizza mouse\" (scheda Tasti)"
+
+#: /home/wmoulden/projects/wahcade/glade/wahcade_setup.glade.h:11
+msgid "Alternative #1"
+msgstr "Alternativa #1"
+
+#: /home/wmoulden/projects/wahcade/glade/wahcade_setup.glade.h:12
+msgid "Alternative #2"
+msgstr "Alternativa #2"
+
+#: /home/wmoulden/projects/wahcade/glade/wahcade_setup.glade.h:13
+msgid "Application"
+msgstr "Applicazione"
+
+#: /home/wmoulden/projects/wahcade/glade/wahcade_setup.glade.h:14
+msgid "Application #1"
+msgstr "Applicazione #1"
+
+#: /home/wmoulden/projects/wahcade/glade/wahcade_setup.glade.h:15
+msgid "Application #2"
+msgstr "Applicazione #2"
+
+#: /home/wmoulden/projects/wahcade/glade/wahcade_setup.glade.h:16
+msgid "Application #3"
+msgstr "Applicazione #3"
+
+#: /home/wmoulden/projects/wahcade/glade/wahcade_setup.glade.h:17
+msgid "Application Parameters"
+msgstr "Parametri applicazione"
+
+#: /home/wmoulden/projects/wahcade/glade/wahcade_setup.glade.h:18
+msgid "Artwork"
+msgstr "Sfondo"
+
+#: /home/wmoulden/projects/wahcade/glade/wahcade_setup.glade.h:19
+msgid "Artwork # that Movies will be displayed in"
+msgstr "Sfondo # del video mostrato in"
+
+#: /home/wmoulden/projects/wahcade/glade/wahcade_setup.glade.h:20
+msgid "Artwork #1"
+msgstr "Sfondo #1"
+
+#: /home/wmoulden/projects/wahcade/glade/wahcade_setup.glade.h:21
+msgid "Artwork #10"
+msgstr "Sfondo #10"
+
+#: /home/wmoulden/projects/wahcade/glade/wahcade_setup.glade.h:22
+msgid "Artwork #2"
+msgstr "Sfondo #2"
+
+#: /home/wmoulden/projects/wahcade/glade/wahcade_setup.glade.h:23
+msgid "Artwork #3"
+msgstr "Sfondo #3"
+
+#: /home/wmoulden/projects/wahcade/glade/wahcade_setup.glade.h:24
+msgid "Artwork #4"
+msgstr "Sfondo #4"
+
+#: /home/wmoulden/projects/wahcade/glade/wahcade_setup.glade.h:25
+msgid "Artwork #5"
+msgstr "Sfondo #5"
+
+#: /home/wmoulden/projects/wahcade/glade/wahcade_setup.glade.h:26
+msgid "Artwork #6"
+msgstr "Sfondo #6"
+
+#: /home/wmoulden/projects/wahcade/glade/wahcade_setup.glade.h:27
+msgid "Artwork #7"
+msgstr "Sfondo #7"
+
+#: /home/wmoulden/projects/wahcade/glade/wahcade_setup.glade.h:28
+msgid "Artwork #8"
+msgstr "Sfondo #8"
+
+#: /home/wmoulden/projects/wahcade/glade/wahcade_setup.glade.h:29
+msgid "Artwork #9"
+msgstr "Sfondo #9"
+
+#: /home/wmoulden/projects/wahcade/glade/wahcade_setup.glade.h:30
+msgid "Auto Launch Apps"
+msgstr "Avvia applicazioni in automatico"
+
+#: /home/wmoulden/projects/wahcade/glade/wahcade_setup.glade.h:31
+msgid "Cancel"
+msgstr "Annulla"
+
+#: /home/wmoulden/projects/wahcade/glade/wahcade_setup.glade.h:32
+msgid "Category / Version File"
+msgstr "Categoria / File versione"
+
+#: /home/wmoulden/projects/wahcade/glade/wahcade_setup.glade.h:33
+msgid "Check this for list to be included in Next / Previous List selection"
+msgstr ""
+"Verifica l'inclusione dell'elenco nella selezione elenco Successivo / "
+"Precedente"
+
+#: /home/wmoulden/projects/wahcade/glade/wahcade_setup.glade.h:34
+msgid "Command Line"
+msgstr "Riga di comando"
+
+#: /home/wmoulden/projects/wahcade/glade/wahcade_setup.glade.h:35
+msgid ""
+"Command Line Format, where:\n"
+"  [name] is replaced by the selected Rom name\n"
+"  [rompath] is replaced by the Rom Directory\n"
+"  [romext] is replaced by the Rom Extension\n"
+"  [autorotate] will rotate the screen (Mame only)\n"
+"  {minimize} will minimize wah!cade after launching the application\n"
+"  {music} allows music playback to continue after launching the application\n"
+"\n"
+".e.g.  [name].[romext] -p [rompath] would be:\n"
+"  asteroids.zip -p /home/user/some/path\n"
+msgstr ""
+"Formato riga di comando, dove:\n"
+"  [name] viene sostituito dal nome ROM selezionato\n"
+"  [rompath] viene sostituito dalla directory ROM\n"
+"  [romext] viene sosituito dall'estensione ROM\n"
+"  [autorotate] ruota lo schermo (solo MAME)\n"
+"  {minimize} minimizza wah!cade dopo l'avvio dell'applicazione\n"
+"  {music} permette di continuare la riproduzione della musica dopo l'avvio "
+"dell'applicazione\n"
+"\n"
+".es.  [name].[romext] -p [rompath] sarebbe:\n"
+"  asteroids.zip -p /home/utente/nome/percorso\n"
+
+#: /home/wmoulden/projects/wahcade/glade/wahcade_setup.glade.h:46
+msgid ""
+"Command Line Format, where:\n"
+"  [name] is replaced by the selected Rom name\n"
+"  [rompath] is replaced by the Rom Directory\n"
+"  [romext] is replaced by the Rom Extension\n"
+"  {minimize} will minimize wah!cade after launching the application\n"
+"\n"
+".e.g.  [name].[romext] -p [rompath] would be:\n"
+"  asteroids.zip -p /home/user/some/path\n"
+msgstr ""
+"Formato riga di comando, dove:\n"
+"  [name] viene sostituito dal nome ROM selezionato\n"
+"  [rompath] viene sostituito dalla directory ROM\n"
+"  [romext] viene sosituito dall'estensione ROM\n"
+"  {minimize} minimizza wah!cade dopo l'avvio dell'applicazione\n"
+"\n"
+".es.  [name].[romext] -p [rompath] sarebbe:\n"
+"  asteroids.zip -p /home/utente/nome/percorso\n"
+
+#: /home/wmoulden/projects/wahcade/glade/wahcade_setup.glade.h:55
+msgid "Control Panel Viewer"
+msgstr "Visualizzatore Pannello di controllo"
+
+#: /home/wmoulden/projects/wahcade/glade/wahcade_setup.glade.h:56
+msgid "Controls File"
+msgstr "File controlli"
+
+#: /home/wmoulden/projects/wahcade/glade/wahcade_setup.glade.h:57
+msgid "Correctly Scale Images"
+msgstr "Scala immagine correttamente"
+
+#: /home/wmoulden/projects/wahcade/glade/wahcade_setup.glade.h:58
+msgid "Cycle List"
+msgstr "Lista ciclica"
+
+#: /home/wmoulden/projects/wahcade/glade/wahcade_setup.glade.h:59
+msgid "Data File"
+msgstr "File dati"
+
+#: /home/wmoulden/projects/wahcade/glade/wahcade_setup.glade.h:60
+msgid "Delay (secs)"
+msgstr "Ritardo (sec)"
+
+#: /home/wmoulden/projects/wahcade/glade/wahcade_setup.glade.h:61
+msgid "Delete this List"
+msgstr "Elimina questo elenco"
+
+#: /home/wmoulden/projects/wahcade/glade/wahcade_setup.glade.h:62
+msgid ""
+"Directory for Movies that will be used in the layout.\n"
+"(also see Wah!Cade Layout Editor)"
+msgstr ""
+"Directory video che sarà usata nel formato.\n"
+"(vedi anche Editor formato Wah!Cade)"
+
+#: /home/wmoulden/projects/wahcade/glade/wahcade_setup.glade.h:64
+msgid ""
+"Directory for artwork that will be used in the layouts Artwork#1 image.\n"
+"(also see Wah!Cade Layout Editor)"
+msgstr ""
+"Directory sfondo che sarà usata nei formati immagine Sfondo#1.\n"
+"(vedi anche Editor formato Wah!Cade)"
+
+#: /home/wmoulden/projects/wahcade/glade/wahcade_setup.glade.h:66
+msgid ""
+"Directory for artwork that will be used in the layouts Artwork#10 image.\n"
+"(also see Wah!Cade Layout Editor)"
+msgstr ""
+"Directory sfondo che sarà usata nei formati immagine Sfondo#10.\n"
+"(vedi anche Editor formato Wah!Cade)"
+
+#: /home/wmoulden/projects/wahcade/glade/wahcade_setup.glade.h:68
+msgid ""
+"Directory for artwork that will be used in the layouts Artwork#2 image.\n"
+"(also see Wah!Cade Layout Editor)"
+msgstr ""
+"Directory sfondo che sarà usata nei formati immagine Sfondo#2.\n"
+"(vedi anche Editor formato Wah!Cade)"
+
+#: /home/wmoulden/projects/wahcade/glade/wahcade_setup.glade.h:70
+msgid ""
+"Directory for artwork that will be used in the layouts Artwork#3 image.\n"
+"(also see Wah!Cade Layout Editor)"
+msgstr ""
+"Directory sfondo che sarà usata nei formati immagine Sfondo#3.\n"
+"(vedi anche Editor formato Wah!Cade)"
+
+#: /home/wmoulden/projects/wahcade/glade/wahcade_setup.glade.h:72
+msgid ""
+"Directory for artwork that will be used in the layouts Artwork#5 image.\n"
+"(also see Wah!Cade Layout Editor)"
+msgstr ""
+"Directory sfondo che sarà usata nei formati immagine Sfondo#5.\n"
+"(vedi anche Editor formato Wah!Cade)"
+
+#: /home/wmoulden/projects/wahcade/glade/wahcade_setup.glade.h:74
+msgid ""
+"Directory for artwork that will be used in the layouts Artwork#6 image.\n"
+"(also see Wah!Cade Layout Editor)"
+msgstr ""
+"Directory sfondo che sarà usata nei formati immagine Sfondo#6.\n"
+"(vedi anche Editor formato Wah!Cade)"
+
+#: /home/wmoulden/projects/wahcade/glade/wahcade_setup.glade.h:76
+msgid ""
+"Directory for artwork that will be used in the layouts Artwork#7 image.\n"
+"(also see Wah!Cade Layout Editor)"
+msgstr ""
+"Directory sfondo che sarà usata nei formati immagine Sfondo#7.\n"
+"(vedi anche Editor formato Wah!Cade)"
+
+#: /home/wmoulden/projects/wahcade/glade/wahcade_setup.glade.h:78
+msgid ""
+"Directory for artwork that will be used in the layouts Artwork#8 image.\n"
+"(also see Wah!Cade Layout Editor)"
+msgstr ""
+"Directory sfondo che sarà usata nei formati immagine Sfondo#8.\n"
+"(vedi anche Editor formato Wah!Cade)"
+
+#: /home/wmoulden/projects/wahcade/glade/wahcade_setup.glade.h:80
+msgid ""
+"Directory for artwork that will be used in the layouts Artwork#9 image.\n"
+"(also see Wah!Cade Layout Editor)"
+msgstr ""
+"Directory sfondo che sarà usata nei formati immagine Sfondo#9.\n"
+"(vedi anche Editor formato Wah!Cade)"
+
+#: /home/wmoulden/projects/wahcade/glade/wahcade_setup.glade.h:82
+msgid ""
+"Directory for artwork that will be used in the layouts Artwork4 image.\n"
+"(also see Wah!Cade Layout Editor)"
+msgstr ""
+"Directory sfondo che sarà usata nei formati immagine Sfondo#4.\n"
+"(vedi anche Editor formato Wah!Cade)"
+
+#: /home/wmoulden/projects/wahcade/glade/wahcade_setup.glade.h:84
+msgid "Display Mouse Cursor"
+msgstr "Mostra cursore mouse"
+
+#: /home/wmoulden/projects/wahcade/glade/wahcade_setup.glade.h:85
+msgid "Display Scroll Arrows in Lists"
+msgstr "Mostra frecce di scorrimento nelle liste"
+
+#: /home/wmoulden/projects/wahcade/glade/wahcade_setup.glade.h:86
+msgid "Edit Game List"
+msgstr "Modifica elenco giochi"
+
+#: /home/wmoulden/projects/wahcade/glade/wahcade_setup.glade.h:87
+msgid "Edit List"
+msgstr "Modifica elenco"
+
+#: /home/wmoulden/projects/wahcade/glade/wahcade_setup.glade.h:88
+msgid "Emulators"
+msgstr "Emulatori"
+
+#: /home/wmoulden/projects/wahcade/glade/wahcade_setup.glade.h:89
+msgid "Exit Movie"
+msgstr "Video di uscita"
+
+#: /home/wmoulden/projects/wahcade/glade/wahcade_setup.glade.h:90
+msgid "External Applications"
+msgstr "Applicazioni esterne"
+
+#: /home/wmoulden/projects/wahcade/glade/wahcade_setup.glade.h:91
+msgid "External Screen Saver"
+msgstr "Salva schermo esterno"
+
+#: /home/wmoulden/projects/wahcade/glade/wahcade_setup.glade.h:92
+msgid "Extra"
+msgstr ""
+
+#: /home/wmoulden/projects/wahcade/glade/wahcade_setup.glade.h:93
+msgid "FullScreen"
+msgstr "Schermo interno"
+
+#: /home/wmoulden/projects/wahcade/glade/wahcade_setup.glade.h:94
+msgid "Generate XML File"
+msgstr "Genera file XML"
+
+#: /home/wmoulden/projects/wahcade/glade/wahcade_setup.glade.h:95
+msgid "History Viewer"
+msgstr "Visualizzatore Cronologia"
+
+#: /home/wmoulden/projects/wahcade/glade/wahcade_setup.glade.h:96
+msgid "Intro Movie"
+msgstr "Video introduttivo"
+
+#: /home/wmoulden/projects/wahcade/glade/wahcade_setup.glade.h:97
+msgid "Joystick"
+msgstr "Joystick"
+
+#: /home/wmoulden/projects/wahcade/glade/wahcade_setup.glade.h:98
+msgid "Keyboard"
+msgstr "Tastiera"
+
+#: /home/wmoulden/projects/wahcade/glade/wahcade_setup.glade.h:99
+msgid "Keys"
+msgstr "Tasti"
+
+#: /home/wmoulden/projects/wahcade/glade/wahcade_setup.glade.h:100
+msgid "Layout Directory"
+msgstr "Directory formato"
+
+#: /home/wmoulden/projects/wahcade/glade/wahcade_setup.glade.h:101
+msgid "Layout File"
+msgstr "File formato"
+
+#: /home/wmoulden/projects/wahcade/glade/wahcade_setup.glade.h:102
+msgid "Layout directory name (in ~/wahcade/layouts)"
+msgstr "Nome directory del formato (in ~/wahcade/layouts)"
+
+#: /home/wmoulden/projects/wahcade/glade/wahcade_setup.glade.h:103
+msgid "List #"
+msgstr "Elenco #"
+
+#: /home/wmoulden/projects/wahcade/glade/wahcade_setup.glade.h:104
+msgid "List Editor"
+msgstr "Editor elenco"
+
+#: /home/wmoulden/projects/wahcade/glade/wahcade_setup.glade.h:105
+msgid "List Generation"
+msgstr "Generazione elenco"
+
+#: /home/wmoulden/projects/wahcade/glade/wahcade_setup.glade.h:106
+msgid "List Generation Method"
+msgstr "Metodo generazione elenco"
+
+#: /home/wmoulden/projects/wahcade/glade/wahcade_setup.glade.h:107
+msgid "List Specific Application Parameters"
+msgstr "Elenca parametri specifici dell'applicazione"
+
+#: /home/wmoulden/projects/wahcade/glade/wahcade_setup.glade.h:108
+msgid "List Title"
+msgstr "Titolo elenco"
+
+#: /home/wmoulden/projects/wahcade/glade/wahcade_setup.glade.h:109
+msgid "List Type"
+msgstr "Tipo elenco"
+
+#: /home/wmoulden/projects/wahcade/glade/wahcade_setup.glade.h:110
+msgid "Lists"
+msgstr "Elenchi"
+
+#: /home/wmoulden/projects/wahcade/glade/wahcade_setup.glade.h:111
+msgid "Location of music"
+msgstr "Percorso musica"
+
+#: /home/wmoulden/projects/wahcade/glade/wahcade_setup.glade.h:112
+msgid "MAME Info (.xml or .dat file)"
+msgstr "Info MAME (file .xml o .dat)"
+
+#: /home/wmoulden/projects/wahcade/glade/wahcade_setup.glade.h:113
+msgid ""
+"Method used to create game lists:\n"
+"1) Rom Directory: Scan the directory for games matching given Rom "
+"Extension.\n"
+"2) XML File: Scan the .xml file matching on games in given Rom Directory.\n"
+"3) DAT File: Scan the .dat file matching on games in given Rom Directory.\n"
+"\n"
+"* XML & DAT File methods are for Mame only."
+msgstr ""
+"Metodi usati per creare l'elenco giochi:\n"
+"1) Directory ROM: scansione directory dei giochi corrispondenti alle "
+"estensioni ROM impostate.\n"
+"2) File XML: scansione file .xml dei giochi corrispondenti alla directory "
+"ROM impostata.\n"
+"3) File DAT: scansione file .dat dei giochi corrispondenti alla directory "
+"ROM impostata.\n"
+"\n"
+"* I metodi dei file XML & DAT valgono solo per MAME."
+
+#: /home/wmoulden/projects/wahcade/glade/wahcade_setup.glade.h:119
+msgid "Misc"
+msgstr "Varie"
+
+#: /home/wmoulden/projects/wahcade/glade/wahcade_setup.glade.h:120
+msgid "Mouse"
+msgstr "Mouse"
+
+#: /home/wmoulden/projects/wahcade/glade/wahcade_setup.glade.h:121
+msgid "Movie Artwork #"
+msgstr "Video di sfondo #"
+
+#: /home/wmoulden/projects/wahcade/glade/wahcade_setup.glade.h:122
+msgid "Movie Directory"
+msgstr "Directory video"
+
+#: /home/wmoulden/projects/wahcade/glade/wahcade_setup.glade.h:123
+msgid "Movies"
+msgstr "Video"
+
+#: /home/wmoulden/projects/wahcade/glade/wahcade_setup.glade.h:124
+msgid "Music"
+msgstr "Musica"
+
+#: /home/wmoulden/projects/wahcade/glade/wahcade_setup.glade.h:125
+msgid "Music / Movie Mix"
+msgstr ""
+
+#: /home/wmoulden/projects/wahcade/glade/wahcade_setup.glade.h:126
+msgid "NMS File"
+msgstr "File NMS"
+
+#: /home/wmoulden/projects/wahcade/glade/wahcade_setup.glade.h:127
+msgid "Number of seconds before Screen Saver starts"
+msgstr "Numero di secondi prima di avviare il Salva schermo"
+
+#: /home/wmoulden/projects/wahcade/glade/wahcade_setup.glade.h:128
+msgid "Number of seconds to display Screen Saver image / movie"
+msgstr "Numero di secondi per mostrare immagine / video del Salva schermo"
+
+#: /home/wmoulden/projects/wahcade/glade/wahcade_setup.glade.h:129
+msgid "Play Music From"
+msgstr "Riproduci musica da"
+
+#: /home/wmoulden/projects/wahcade/glade/wahcade_setup.glade.h:130
+msgid "Please Wait.  Creating Initial Filter...      "
+msgstr "Attendere prego.  Creazione filtro iniziale..."
+
+#: /home/wmoulden/projects/wahcade/glade/wahcade_setup.glade.h:131
+msgid "Remove Current Emulator"
+msgstr "Rimuovi emulatore attuale"
+
+#: /home/wmoulden/projects/wahcade/glade/wahcade_setup.glade.h:132
+msgid "Reset Filters"
+msgstr "Reimposta filtri"
+
+#: /home/wmoulden/projects/wahcade/glade/wahcade_setup.glade.h:133
+msgid "Reset Setup"
+msgstr "Reimposta Opzioni"
+
+#: /home/wmoulden/projects/wahcade/glade/wahcade_setup.glade.h:134
+msgid "Rom Directory"
+msgstr "Directory ROM"
+
+#: /home/wmoulden/projects/wahcade/glade/wahcade_setup.glade.h:135
+msgid ""
+"Rom Directory\n"
+"XML File (Mame Only)\n"
+"DAT File (Mame Only)\n"
+msgstr ""
+"Directory ROM\n"
+"File XML (solo MAME)\n"
+"File DAT (solo MAME)\n"
+
+#: /home/wmoulden/projects/wahcade/glade/wahcade_setup.glade.h:139
+msgid "Rom Extension"
+msgstr "Estensione ROM"
+
+#: /home/wmoulden/projects/wahcade/glade/wahcade_setup.glade.h:140
+msgid "Screen Saver"
+msgstr "Salva schermo"
+
+#: /home/wmoulden/projects/wahcade/glade/wahcade_setup.glade.h:141
+msgid "Screen Saver Delay (secs)"
+msgstr "Ritardo Salva schermo (sec)"
+
+#: /home/wmoulden/projects/wahcade/glade/wahcade_setup.glade.h:142
+msgid "Screen Saver Slide Duration (secs)"
+msgstr "Durata Salva schermo (sec)"
+
+#: /home/wmoulden/projects/wahcade/glade/wahcade_setup.glade.h:143
+msgid "Screen Saver Type"
+msgstr "Tipo Salva schermo"
+
+#: /home/wmoulden/projects/wahcade/glade/wahcade_setup.glade.h:144
+msgid "Select Joystick Control"
+msgstr "Imposta controllo Joystick"
+
+#: /home/wmoulden/projects/wahcade/glade/wahcade_setup.glade.h:145
+msgid "Select Key"
+msgstr "Imposta tasto"
+
+#: /home/wmoulden/projects/wahcade/glade/wahcade_setup.glade.h:146
+msgid "Select Mouse Control"
+msgstr "Imposta controllo mouse"
+
+#: /home/wmoulden/projects/wahcade/glade/wahcade_setup.glade.h:147
+msgid "Set Category / Version File"
+msgstr "Imposta Categoria / File versione"
+
+#: /home/wmoulden/projects/wahcade/glade/wahcade_setup.glade.h:149
+msgid "Set Filter"
+msgstr "Imposta filtro"
+
+#: /home/wmoulden/projects/wahcade/glade/wahcade_setup.glade.h:151
+msgid "Set XML / Data File"
+msgstr "Imposta XML / File dati"
+
+#: /home/wmoulden/projects/wahcade/glade/wahcade_setup.glade.h:152
+msgid "Setup Filters..."
+msgstr "Opzioni filtri..."
+
+#: /home/wmoulden/projects/wahcade/glade/wahcade_setup.glade.h:153
+msgid ""
+"Show scroll up / down arrows in Games, Options and History Viewer lists."
+msgstr ""
+"Mostra frecce su / giù nelle liste Giochi, Opzioni e Visualizzatore "
+"Cronologia."
+
+#: /home/wmoulden/projects/wahcade/glade/wahcade_setup.glade.h:154
+msgid "Shuffle Playlist"
+msgstr ""
+
+#: /home/wmoulden/projects/wahcade/glade/wahcade_setup.glade.h:155
+msgid "Start Wah!Cade in fullscreen mode"
+msgstr "Avvia Wah!Cade a schermo intero"
+
+#: /home/wmoulden/projects/wahcade/glade/wahcade_setup.glade.h:156
+msgid "The Control Panel Viewer layout file location (.lay)"
+msgstr "Posizione del file formato visualizzatore Pannello di Controllo (.lay)"
+
+#: /home/wmoulden/projects/wahcade/glade/wahcade_setup.glade.h:157
+msgid "The background image (if any) for the history viewer window."
+msgstr ""
+"Immagine di sfondo (se esiste) per la finestra del visualizzatore cronologia."
+
+#: /home/wmoulden/projects/wahcade/glade/wahcade_setup.glade.h:158
+msgid "The catver.ini file location"
+msgstr "Percorso file catver.ini"
+
+#: /home/wmoulden/projects/wahcade/glade/wahcade_setup.glade.h:159
+msgid "The controls.ini file location"
+msgstr "Percorso file controls.ini"
+
+#: /home/wmoulden/projects/wahcade/glade/wahcade_setup.glade.h:160
+msgid "The history.dat file"
+msgstr "File history.dat"
+
+#: /home/wmoulden/projects/wahcade/glade/wahcade_setup.glade.h:161
+msgid "The location of the emulator executable"
+msgstr "Percorso file eseguibile dell'emulatore"
+
+#: /home/wmoulden/projects/wahcade/glade/wahcade_setup.glade.h:162
+msgid ""
+"The order applications are launched prior to the emulator, eg 1,2,3 or 3,2,1 "
+"or 1,2 or 1 etc."
+msgstr ""
+"Ordine lancio applicazioni prima dell'emulatore, es. 1,2,3 or 3,2,1 or 1,2 "
+"or 1 etc."
+
+#: /home/wmoulden/projects/wahcade/glade/wahcade_setup.glade.h:163
+msgid "This gets displayed in the Layout"
+msgstr "Questo viene visualizzato nel formato"
+
+#: /home/wmoulden/projects/wahcade/glade/wahcade_setup.glade.h:164
+msgid "Title"
+msgstr "Titolo"
+
+#: /home/wmoulden/projects/wahcade/glade/wahcade_setup.glade.h:165
+msgid "Use Joystick"
+msgstr "Utilizza Joystick"
+
+#: /home/wmoulden/projects/wahcade/glade/wahcade_setup.glade.h:166
+msgid "Use Keyboard"
+msgstr "Utilizza tastiera"
+
+#: /home/wmoulden/projects/wahcade/glade/wahcade_setup.glade.h:168
+msgid "Volume (%)"
+msgstr "Volume (%)"
+
+#: /home/wmoulden/projects/wahcade/glade/wahcade_setup.glade.h:169
+msgid "Wah!Cade"
+msgstr "Wah!Cade"
+
+#: /home/wmoulden/projects/wahcade/glade/wahcade_setup.glade.h:170
+msgid "Wah!Cade Setup"
+msgstr "Opzioni Wah!Cade"
+
+#: /home/wmoulden/projects/wahcade/glade/wahcade_setup.glade.h:171
+msgid "Wrap Lists"
+msgstr "Includi elenchi"
+
+#: /home/wmoulden/projects/wahcade/glade/wahcade_setup.glade.h:172
+msgid "XML / Data File"
+msgstr "File XML / Dati"
+
+#: /home/wmoulden/projects/wahcade/glade/wahcade_setup.glade.h:173
+msgid "[Joystick Action]"
+msgstr "[Azione Joystick]"
+
+#: /home/wmoulden/projects/wahcade/glade/wahcade_setup.glade.h:174
+#: /home/wmoulden/projects/wahcade/glade/layout_editor.glade.h:59
+msgid "_About"
+msgstr "I_nformazioni"
+
+#: /home/wmoulden/projects/wahcade/glade/wahcade_setup.glade.h:175
+#: /home/wmoulden/projects/wahcade/glade/layout_editor.glade.h:61
+msgid "_File"
+msgstr "_File"
+
+#: /home/wmoulden/projects/wahcade/glade/wahcade_setup.glade.h:176
+#: /home/wmoulden/projects/wahcade/glade/layout_editor.glade.h:62
+msgid "_Help"
+msgstr "A_iuto"
+
+#: /home/wmoulden/projects/wahcade/glade/wahcade_setup.glade.h:177
+msgid "_Remove Game"
+msgstr "_Rimuovi Gioco"
+
+#: /home/wmoulden/projects/wahcade/glade/wahcade_setup.glade.h:178
+msgid "_Reset Filter"
+msgstr "_Reimposta filtro"
+
+#: /home/wmoulden/projects/wahcade/glade/wahcade_setup.glade.h:179
+msgid "n Games"
+msgstr "n Giochi"
+
+#: /home/wmoulden/projects/wahcade/glade/wahcade_setup.glade.h:180
+msgid ""
+"wahcade-cp-viewer\n"
+"wahcade-history-viewer"
+msgstr ""
+"wahcade-cp-viewer\n"
+"wahcade-history-viewer"
+
+#: /home/wmoulden/projects/wahcade/glade/layout_editor.glade.h:1
+msgid ""
+"0\n"
+"90\n"
+"180\n"
+"270"
+msgstr ""
+"0\n"
+"90\n"
+"180\n"
+"270"
+
+#: /home/wmoulden/projects/wahcade/glade/layout_editor.glade.h:5
+msgid ""
+"1200\n"
+"1024\n"
+"768\n"
+"600\n"
+"480"
+msgstr ""
+"1600\n"
+"1280\n"
+"1024\n"
+"800\n"
+"640"
+
+#: /home/wmoulden/projects/wahcade/glade/layout_editor.glade.h:10
+msgid ""
+"1600\n"
+"1280\n"
+"1024\n"
+"800\n"
+"640"
+msgstr ""
+"1600\n"
+"1280\n"
+"1024\n"
+"800\n"
+"640"
+
+#: /home/wmoulden/projects/wahcade/glade/layout_editor.glade.h:15
+msgid "Background Colour"
+msgstr "Colore di sfondo"
+
+#: /home/wmoulden/projects/wahcade/glade/layout_editor.glade.h:16
+msgid "Background Image"
+msgstr "Immagine di sfondo"
+
+#: /home/wmoulden/projects/wahcade/glade/layout_editor.glade.h:17
+msgid "Bar Colour"
+msgstr "Colore barra"
+
+#: /home/wmoulden/projects/wahcade/glade/layout_editor.glade.h:18
+msgid "CP Viewer"
+msgstr "Visualizzatore PC"
+
+#: /home/wmoulden/projects/wahcade/glade/layout_editor.glade.h:19
+msgid "Centre"
+msgstr "Centro"
+
+#: /home/wmoulden/projects/wahcade/glade/layout_editor.glade.h:20
+msgid "Control Panel Viewer Window"
+msgstr "Finestra visualizzatore Pannello di Controllo"
+
+#: /home/wmoulden/projects/wahcade/glade/layout_editor.glade.h:21
+msgid "Full Screen"
+msgstr "Schermo intero"
+
+#: /home/wmoulden/projects/wahcade/glade/layout_editor.glade.h:22
+msgid "History Window"
+msgstr "Finestra Cronologia"
+
+#: /home/wmoulden/projects/wahcade/glade/layout_editor.glade.h:23
+msgid "Item Properties"
+msgstr "Proprietà elemento"
+
+#: /home/wmoulden/projects/wahcade/glade/layout_editor.glade.h:24
+msgid "Item _Properties"
+msgstr "_Proprietà elemento"
+
+#: /home/wmoulden/projects/wahcade/glade/layout_editor.glade.h:25
+msgid "Layout"
+msgstr "Formato"
+
+#: /home/wmoulden/projects/wahcade/glade/layout_editor.glade.h:26
+msgid "Layout Properties"
+msgstr "Proprietà formato"
+
+#: /home/wmoulden/projects/wahcade/glade/layout_editor.glade.h:27
+msgid "Leave unchecked for Wah!Cade to auto-detect background images."
+msgstr ""
+
+#: /home/wmoulden/projects/wahcade/glade/layout_editor.glade.h:29
+msgid "M_essage Window"
+msgstr "Fin_estra di dialogo"
+
+#: /home/wmoulden/projects/wahcade/glade/layout_editor.glade.h:30
+msgid "Main Window"
+msgstr "Finestra Principale"
+
+#: /home/wmoulden/projects/wahcade/glade/layout_editor.glade.h:31
+msgid "Message Window"
+msgstr "Finestra di dialogo"
+
+#: /home/wmoulden/projects/wahcade/glade/layout_editor.glade.h:32
+msgid "Name"
+msgstr "Nome"
+
+#: /home/wmoulden/projects/wahcade/glade/layout_editor.glade.h:33
+msgid "Open History Layout"
+msgstr "Apri formato Cronologia"
+
+#: /home/wmoulden/projects/wahcade/glade/layout_editor.glade.h:34
+msgid "Open _CP Viewer Layout"
+msgstr "Apri formato visualizzatore P_C"
+
+#: /home/wmoulden/projects/wahcade/glade/layout_editor.glade.h:35
+msgid "Options Window"
+msgstr "Finestra Opzioni"
+
+#: /home/wmoulden/projects/wahcade/glade/layout_editor.glade.h:36
+msgid "Position (X,Y)"
+msgstr "Posizione (X,Y)"
+
+#: /home/wmoulden/projects/wahcade/glade/layout_editor.glade.h:37
+msgid "Properties"
+msgstr "Proprietà"
+
+#: /home/wmoulden/projects/wahcade/glade/layout_editor.glade.h:38
+msgid "Properties On Top"
+msgstr "Proprietà in primo piano"
+
+#: /home/wmoulden/projects/wahcade/glade/layout_editor.glade.h:40
+msgid "Rotation"
+msgstr "Rotazione"
+
+#: /home/wmoulden/projects/wahcade/glade/layout_editor.glade.h:41
+msgid "S_creen Properties"
+msgstr "Proprietà _Schermo"
+
+#: /home/wmoulden/projects/wahcade/glade/layout_editor.glade.h:42
+msgid "Save C_P Viewer Layout As"
+msgstr "Salva formato visualizzatore C_P come"
+
+#: /home/wmoulden/projects/wahcade/glade/layout_editor.glade.h:43
+msgid "Save History Layout As"
+msgstr "Salva formato Cronologia come"
+
+#: /home/wmoulden/projects/wahcade/glade/layout_editor.glade.h:44
+msgid "Save Layout(s)"
+msgstr "Salva formato(i)"
+
+#: /home/wmoulden/projects/wahcade/glade/layout_editor.glade.h:45
+msgid "Save Wah!Cade Layout _As"
+msgstr "S_alva formato Wah!Cade come"
+
+#: /home/wmoulden/projects/wahcade/glade/layout_editor.glade.h:46
+msgid "Screen Properties"
+msgstr "Proprietà schermo"
+
+#: /home/wmoulden/projects/wahcade/glade/layout_editor.glade.h:47
+msgid "Screen Saver Window"
+msgstr "Finestra Salva schermo"
+
+#: /home/wmoulden/projects/wahcade/glade/layout_editor.glade.h:48
+msgid "Select _All (Visible)"
+msgstr "_Seleziona tutto (visibile)"
+
+#: /home/wmoulden/projects/wahcade/glade/layout_editor.glade.h:49
+msgid "Selected Colour"
+msgstr "Colore selezionato"
+
+#: /home/wmoulden/projects/wahcade/glade/layout_editor.glade.h:50
+msgid "Set Background Image"
+msgstr "Imposta immagine di sfondo"
+
+#: /home/wmoulden/projects/wahcade/glade/layout_editor.glade.h:51
+msgid "Size (Width x Height)"
+msgstr "Dimensione (Larghezza x Altezza)"
+
+#: /home/wmoulden/projects/wahcade/glade/layout_editor.glade.h:52
+msgid "Size (Width, Height)"
+msgstr "Dimensione (Larghezza, Altezza)"
+
+#: /home/wmoulden/projects/wahcade/glade/layout_editor.glade.h:53
+msgid "Text Alignment"
+msgstr "Allineamento testo"
+
+#: /home/wmoulden/projects/wahcade/glade/layout_editor.glade.h:54
+msgid "Text Colour"
+msgstr "Colore testo"
+
+#: /home/wmoulden/projects/wahcade/glade/layout_editor.glade.h:55
+msgid "Text Font"
+msgstr "Carattere testo"
+
+#: /home/wmoulden/projects/wahcade/glade/layout_editor.glade.h:56
+msgid "Transparent"
+msgstr "Trasparente"
+
+#: /home/wmoulden/projects/wahcade/glade/layout_editor.glade.h:57
+msgid "Visible"
+msgstr "Visibile"
+
+#: /home/wmoulden/projects/wahcade/glade/layout_editor.glade.h:58
+msgid "Wah!Cade Layout Editor"
+msgstr "Editor formato Wah!Cade"
+
+#: /home/wmoulden/projects/wahcade/glade/layout_editor.glade.h:60
+msgid "_Edit"
+msgstr "Mo_difica"
+
+#: /home/wmoulden/projects/wahcade/glade/layout_editor.glade.h:63
+msgid "_Main Window"
+msgstr "Finestra _Principale"
+
+#: /home/wmoulden/projects/wahcade/glade/layout_editor.glade.h:64
+msgid "_Open Wah!Cade Layout"
+msgstr "_Apri formato Wah!Cade"
+
+#: /home/wmoulden/projects/wahcade/glade/layout_editor.glade.h:65
+msgid "_Options Window"
+msgstr "Finestra _Opzioni"
+
+#: /home/wmoulden/projects/wahcade/glade/layout_editor.glade.h:66
+msgid "_Screen Saver Window"
+msgstr "Finestra _Salva schermo"
+
+#: /home/wmoulden/projects/wahcade/glade/layout_editor.glade.h:67
+msgid "_Select All"
+msgstr "_Seleziona tutto"
+
+#: /home/wmoulden/projects/wahcade/glade/layout_editor.glade.h:68
+msgid "_View"
+msgstr "_Visualizza"
+
+#~ msgid "Wah!Cade config files created in: [%s]"
+#~ msgstr "File configurazione Wah!Cade creati in: [%s]"
+
+#~ msgid ""
+#~ "Restart after configuring (run wahcade-setup or see the README file)."
+#~ msgstr ""
+#~ "Riavvia dopo la configurazione (esegui wahcade-setup o leggi il file "
+#~ "README)."
+
+#~ msgid "Error: %s"
+#~ msgstr "Errore: %s"
+
+#~ msgid "Warning: Failed to create Music gstreamer objects"
+#~ msgstr "Attenzione: impossibile creare oggetti musica di gstreamer"
+
+#~ msgid "Error: Music Path [%s] does not exist"
+#~ msgstr "Errore: il percorso Musica [%s] non esiste"
+
+#~ msgid "Error: Movie Preview Path [%s] does not exist"
+#~ msgstr "Errore: percorso anteprima video [%s] inesistente"
+
+#~ msgid "Warning: Failed to create Video gstreamer objects"
+#~ msgstr "Attenzione: impossibile creare oggetti video di gstreamer"
+
+#~ msgid "Warning: ScrSaver: Failed to create Video gstreamer objects"
+#~ msgstr ""
+#~ "Attenzione: Salva schermo: impossibile creare oggetti video gstreamer"
+
+#~ msgid "M.A.M.E. Only"
+#~ msgstr "Solo M.A.M.E."

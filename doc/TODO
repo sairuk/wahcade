@@ -1,0 +1,41 @@
+Wah!Cade TODO
+=============
+
+See the Blueprints:  https://blueprints.launchpad.net/wahcade
+
+Definite:
+---------
+* Rotate video if necessary
+* Detect keyboard & mouse events when mouse pointer is over a video window
+* Add Nelistc's LIRC patch (if I can find it!)
+* Add various EXIT..., OP_MENU_HIDE actions
+
+
+Maybe:
+------
+* add Sylvain Faveau's emulator class patch
+* convert cp viewer layout file format into standard mamewah / wahcade format
+* make movie screensaver support identical to mamewah
+* add sounds for events (e.g. change of lists, game launch, etc)
+* switch to pygame / SDL
+
+
+v2.0
+----
+Rom Directory Enhancments:
+    Postby spudgunman on 24 Oct 2008 07:01 am
+    could I put in a feature request for recursive directory searching option for ROM directory
+    for instance I have roms like:
+
+    SNES
+    ../USA
+    ../Japan
+    it would be nice if wahcade just found them all, (even cooler if it made lists for them each)
+    Also multiple rom types, such as in gameboy that might be .gc or gx for gameboy color and gameboy orginal b/w but all run off the same emulator
+    so for file type - ext1; ext2; ext3 ....
+
+Game Lists:
+    Postby spudgunman on 26 Oct 2008 05:54 pm
+    Make game list read only by checkbox for each game list (ie all games read only but "Kelly's Games" can be add/remove)
+    Make Game Lists emulator wide, have games from multiple emulators in a list
+

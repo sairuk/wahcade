@@ -1,0 +1,5 @@
+#!/bin/bash
+#start wahcade layout editor
+cd /usr/local/share/games/wahcade
+python wahcade-layout-editor.py $*
+

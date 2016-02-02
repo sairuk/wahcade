@@ -1,0 +1,31 @@
+#!/bin/sh
+#build wahcade .deb package
+PROJECTS=~/projects
+COMMON=$PROJECTS/common
+NAME=wahcade
+echo `eval date +%Y%m%d`"mahcade" > $PROJECTS/$NAME/VERSION
+VERSION=$(cat $PROJECTS/$NAME/VERSION)
+PYVER=$NAME-$VERSION
+SOURCE=$PROJECTS/$NAME
+WWW=$PROJECTS/anti-particle.com
+
+#make directories (we don't care if they exist atm)
+mkdir -p $PROJECTS/$NAME
+mkdir -p $PROJECTS/anti-particle.com
+mkdir -p $PROJECTS/common
+
+#build deb package
+python setup.py bdist_debian
+
+#install it
+sudo dpkg -i $SOURCE/dist/$NAME*$VERSION*.deb
+
+#copy to dirs
+cp -f $SOURCE/dist/$NAME*$VERSION*.deb $WWW/projects/$NAME
+
+#generate rpm
+sudo alien --to-rpm $SOURCE/dist/$NAME*$VERSION*.deb
+cp -f $SOURCE/$NAME*$VERSION*.rpm $WWW/projects/$NAME
+mv -f $SOURCE/$NAME*$VERSION*.rpm $SOURCE/dist/rpms
+mv $SOURCE/dist/$NAME*$VERSION*.deb $SOURCE/dist/debs
+rm -rf $SOURCE/dist

@@ -1,0 +1,11 @@
+#!/bin/bash
+#make get text, tarball & build deb
+echo 'make wahcade' > make.log
+if [ -z "$1" ]; then
+    if [ "$1" = "--gettext" ]; then
+       ./make_gettext >> make.log
+    fi
+fi
+./make_tarball >> make.log
+./build_deb_package >> make.log
+
