@@ -69,6 +69,7 @@ setup(
         ("share/games/wahcade/config.dist/layouts/simple_640x480", glob.glob("config.dist/layouts/simple_640x480/*.*")),
         ("share/games/wahcade/config.dist/layouts/simple_800x600", glob.glob("config.dist/layouts/simple_800x600/*.*")),
         ("share/games/wahcade/config.dist/layouts/simple_1024x768", glob.glob("config.dist/layouts/simple_1024x768/*.*")),
+        ("share/games/wahcade/config.dist/plugins/", glob.glob("config.dist/plugins/*.*")),
         ("share/games/wahcade/doc", glob.glob("doc/[A-Z]*")),
         ("share/games/wahcade/doc/samples", glob.glob("doc/samples/*")),
         ("share/games/wahcade/doc/xmame", glob.glob("doc/xmame/*")),

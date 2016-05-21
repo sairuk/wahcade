@@ -85,6 +85,9 @@ wahcade/config.dist/layouts/simple_800x600/layout.lay
 wahcade/config.dist/layouts/simple_800x600/main.png
 wahcade/config.dist/layouts/simple_1024x768/layout.lay
 wahcade/config.dist/layouts/simple_1024x768/main.png
+wahcade/config.dist/plugins/launcher_desktop.py
+wahcade/config.dist/plugins/launcher_lnk.py
+wahcade/config.dist/plugins/launcher_url.py
 wahcade/doc/CHANGELOG
 wahcade/doc/COPYING
 wahcade/doc/INI_FILES
