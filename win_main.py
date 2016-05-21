@@ -1122,7 +1122,7 @@ class WinMain(WahCade):
         fp = None
         plugin = "launcher_%s" % rom_extension
         try:
-            fp, filename, desc = imp.find_module(plugin,  ['./plugins'])
+            fp, filename, desc = imp.find_module( plugin,[ os.path.join( self.userpath,'plugins')])
             mod = imp.load_module(plugin, fp, filename, desc)
             self.log_msg('[PLUGIN] Using plugin %s' % plugin)
         except:

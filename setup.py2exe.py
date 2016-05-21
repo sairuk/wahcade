@@ -79,6 +79,7 @@ setup(
         ("config.dist/layouts/classic_800x600", glob.glob("config.dist/layouts/classic_800x600/*.*")),
         ("config.dist/layouts/classic_1024x768", glob.glob("config.dist/layouts/classic_1024x768/*.*")),
         ("config.dist/layouts/cpviewer", glob.glob("config.dist/layouts/cpviewer/*.*")),
+        ("config.dist/plugins", glob.glob("config.dist/plugins/*.*")),
         ("doc", glob.glob("doc/[A-Z]*")),
         ("doc/samples", glob.glob("doc/samples/*")),
         ("doc/xmame", glob.glob("doc/xmame/*")),
