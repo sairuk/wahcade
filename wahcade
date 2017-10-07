@@ -1,5 +1,30 @@
 #!/bin/bash
-#start wahcade
-cd /usr/local/share/games/wahcade
-python wahcade.py $*
+set -x 
+set -e
 
+## 
+# Need to know where wahcade is installed
+# set WAHCADEPATH or pickup default location
+if [ -z "${WAHCADEPATH}" ]; then
+    WAHCADEPATH=/usr/local/share/games/wahcade
+    if [ ! -d $WAHCADEPATH ]; then
+        echo 'Configure WAHCADEPATH correctly'
+        exit 1
+    fi
+fi
+
+##
+# Check python version
+if [ ! -z "$(which python)" ]; then
+    PYVER=$(python --version 2>&1)
+    if [[ ! ${PYVER} =~ ^Python\ 2\..* ]]; then
+        echo "Unsupported version of python: $PYVER"
+        exit 2
+    fi
+fi
+
+	
+##
+# start wahcade
+cd $WAHCADEPATH
+python wahcade.py $*
