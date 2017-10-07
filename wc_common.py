@@ -249,9 +249,11 @@ class WahCade:
                     del pb
                     pb = gtk.gdk.pixbuf_new_from_file(img_filename)
                     self.anim = 0
-        except IOError:
+        except IOError or glib.GError as e:
+            self.log_msg("[ERROR] %s" % e)
             #load empty image
             if not missing_img:
+                self.log_msg("[INFO] Loading default image")
                 missing_img = os.path.join(APP_PATH, 'pixmaps', 'empty.png')
             pb = gtk.gdk.pixbuf_new_from_file(missing_img)
         #calc image scale
