@@ -51,6 +51,7 @@ setup(
         ("share/games/wahcade/config.dist/ctrlr", glob.glob("config.dist/ctrlr/*.*")),
         ("share/games/wahcade/config.dist/files", glob.glob("config.dist/files/*.*")),
         ("share/games/wahcade/config.dist/ini", glob.glob("config.dist/ini/*.ini")),
+        ("share/games/wahcade/config.dist/plugins", glob.glob("config.dist/plugins/*.*")),
         ("share/games/wahcade/config.dist/layouts", glob.glob("config.dist/layouts/*.*")),
         ("share/games/wahcade/config.dist/layouts/classic_480x640", glob.glob("config.dist/layouts/classic_480x640/*.*")),
         ("share/games/wahcade/config.dist/layouts/classic_640x480", glob.glob("config.dist/layouts/classic_640x480/*.*")),
